@@ -1,0 +1,7 @@
+
+
+Returns Emotion object styles friendly media queries for breakpoint names.
+
+The queries follow the min-width syntax suitable for mobile first design / progressive enhancement. Mobile first design starts with the smallest screen. Then goes after the large screens.
+
+This design system sets the first breakpoint to mobile. This means the design starts with the watch or the feature phone. See breakpoints for details.
