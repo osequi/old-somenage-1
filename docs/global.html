@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>API</h2><h3>Global</h3><ul><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>API</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -160,6 +160,79 @@
             
                 <div class="member">
 
+<h4 class="name" id="breakpoints">
+    <a class="href-link" href="#breakpoints">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        breakpoints
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the breakpoints.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
+            <span>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line8">line 8</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
 <h4 class="name" id="theme">
     <a class="href-link" href="#theme">#</a>
     
@@ -219,7 +292,7 @@
         <p class="tag-source">
             <a href="theme_theme.ts.html" class="button">View Source</a>
             <span>
-                <a href="theme_theme.ts.html">theme/theme.ts</a>, <a href="theme_theme.ts.html#line9">line 9</a>
+                <a href="theme_theme.ts.html">theme/theme.ts</a>, <a href="theme_theme.ts.html#line10">line 10</a>
             </span>
         </p>
     
@@ -325,6 +398,171 @@
 
     </span>
 
+<h4 class="name" id="TBreakpoint">
+    <a class="href-link" href="#TBreakpoint">#</a>
+    
+    <span class="code-name">
+        TBreakpoint
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the breakpoint type.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>name</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">TBreakpointNames</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The breakpoint name.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>value</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">number</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The breakpoint value in pixels.</p></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
+            <span>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line17">line 17</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+    
+        <pre class="prettyprint"><code>{name: 'mobile', value: 320}</code></pre>
+    
+
+        <p class="code-caption">Valid breakpoint names</p>
+    
+    
+        <pre class="prettyprint"><code>["mobile" | "tablet" | "laptop" | "desktop"]</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
 <h4 class="name" id="TTheme">
     <a class="href-link" href="#TTheme">#</a>
     
@@ -371,6 +609,29 @@
             
 <tr class="deep-level-0">
     
+        <td class="name"><code>breakpoints</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Array</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The breakpoints for the theme.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
         <td class="name"><code>typography</code></td>
     
 
@@ -387,7 +648,7 @@
 
     
 
-    <td class="description last"></td>
+    <td class="description last"><p>The typography for the theme.</p></td>
 </tr>
 
         
@@ -432,7 +693,7 @@
         <p class="tag-source">
             <a href="theme_theme.ts.html" class="button">View Source</a>
             <span>
-                <a href="theme_theme.ts.html">theme/theme.ts</a>, <a href="theme_theme.ts.html#line16">line 16</a>
+                <a href="theme_theme.ts.html">theme/theme.ts</a>, <a href="theme_theme.ts.html#line20">line 20</a>
             </span>
         </p>
     

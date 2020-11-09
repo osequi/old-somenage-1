@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> typography/typography.ts</title>
+  <title> breakpoints/breakpoints.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>typography/typography.ts</h1>
+                    <h1>breakpoints/breakpoints.ts</h1>
                 </header>
                 
 
@@ -90,22 +90,47 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Defines the typography type.
- *
- * @category API
- * @subcategory Theme
+ * Defines the breakpoint names.
  */
-export type TTypography = {};
+export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
 
 /**
- * Defines the typography.
+ * Defines the breakpoint type.
+ *
+ * @example
+ * {name: 'mobile', value: 320}
+ *
+ * @example &lt;caption>Valid breakpoint names&lt;/caption>
+ * ["mobile" | "tablet" | "laptop" | "desktop"]
  *
  * @category API
  * @subcategory Theme
  */
-const typography: TTypography = {};
+export type TBreakpoint = {
+  /**
+   * The breakpoint name.
+   */
+  name: TBreakpointNames;
+  /**
+   * The breakpoint value in pixels.
+   */
+  value: number;
+};
 
-export default typography;
+/**
+ * Defines the breakpoints.
+ *
+ * @category API
+ * @subcategory Theme
+ */
+const breakpoints: TBreakpoint[] = [
+  { name: "mobile", value: 320 },
+  { name: "tablet", value: 768 },
+  { name: "laptop", value: 1024 },
+  { name: "desktop", value: 1600 },
+];
+
+export default breakpoints;
 </code></pre>
         </article>
     </section>

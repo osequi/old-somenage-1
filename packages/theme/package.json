@@ -7,6 +7,7 @@
   "author": "osequi <cs@osequi.com>",
   "license": "MIT",
   "dependencies": {
-    "@somenage/typography": "^0.1.0"
+    "@somenage/typography": "^0.1.0",
+    "@somenage/breakpoints": "^0.1.0"
   }
 }

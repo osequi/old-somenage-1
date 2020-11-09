@@ -1,3 +1,6 @@
+import { TBreakpoint } from "@somenage/breakpoints";
+import { breakpoints } from "@somenage/breakpoints";
+
 import type { TTypography } from "@somenage/typography";
 import { typography } from "@somenage/typography";
 
@@ -8,6 +11,13 @@ import { typography } from "@somenage/typography";
  * @subcategory Theme
  */
 export type TTheme = {
+  /**
+   * The breakpoints for the theme.
+   */
+  breakpoints: TBreakpoint[];
+  /**
+   * The typography for the theme.
+   */
   typography: TTypography;
 };
 
@@ -18,6 +28,7 @@ export type TTheme = {
  * @subcategory Theme
  */
 const theme: TTheme = {
+  breakpoints: breakpoints,
   typography: typography,
 };
 
