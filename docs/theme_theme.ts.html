@@ -72,7 +72,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>API</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -89,7 +89,7 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { TBreakpoint } from "@somenage/breakpoints";
+            <pre class="prettyprint source linenums"><code>import type { TBreakpoint, TBreakpointNames } from "@somenage/breakpoints";
 import { breakpoints } from "@somenage/breakpoints";
 
 import type { TTypography } from "@somenage/typography";
@@ -98,8 +98,7 @@ import { typography } from "@somenage/typography";
 /**
  * Defines the theme type.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 export type TTheme = {
   /**
@@ -115,8 +114,7 @@ export type TTheme = {
 /**
  * Defines the theme.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 const theme: TTheme = {
   breakpoints: breakpoints,
@@ -124,6 +122,7 @@ const theme: TTheme = {
 };
 
 export default theme;
+export type { TBreakpoint, TBreakpointNames };
 </code></pre>
         </article>
     </section>

@@ -1,5 +1,7 @@
 /**
  * Defines the breakpoint names.
+ *
+ * @category Theme
  */
 export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
 
@@ -12,8 +14,7 @@ export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
  * @example <caption>Valid breakpoint names are set up in TBreakpointNames</caption>
  * ["mobile" | "tablet" | "laptop" | "desktop"]
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 export type TBreakpoint = {
   /**
@@ -29,8 +30,7 @@ export type TBreakpoint = {
 /**
  * Defines the breakpoints.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 const breakpoints: TBreakpoint[] = [
   { name: "mobile", value: 320 },

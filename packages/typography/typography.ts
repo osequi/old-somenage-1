@@ -1,16 +1,14 @@
 /**
  * Defines the typography type.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 export type TTypography = {};
 
 /**
  * Defines the typography.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 const typography: TTypography = {};
 

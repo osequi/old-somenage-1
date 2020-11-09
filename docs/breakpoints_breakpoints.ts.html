@@ -72,7 +72,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>API</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -91,6 +91,8 @@
         <article>
             <pre class="prettyprint source linenums"><code>/**
  * Defines the breakpoint names.
+ *
+ * @category Theme
  */
 export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
 
@@ -100,11 +102,10 @@ export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
  * @example
  * {name: 'mobile', value: 320}
  *
- * @example &lt;caption>Valid breakpoint names&lt;/caption>
+ * @example &lt;caption>Valid breakpoint names are set up in TBreakpointNames&lt;/caption>
  * ["mobile" | "tablet" | "laptop" | "desktop"]
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 export type TBreakpoint = {
   /**
@@ -120,8 +121,7 @@ export type TBreakpoint = {
 /**
  * Defines the breakpoints.
  *
- * @category API
- * @subcategory Theme
+ * @category Theme
  */
 const breakpoints: TBreakpoint[] = [
   { name: "mobile", value: 320 },

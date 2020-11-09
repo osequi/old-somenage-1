@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> typography/typography.ts</title>
+  <title> use-breakpoint/useBreakpoint.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>typography/typography.ts</h1>
+                    <h1>use-breakpoint/useBreakpoint.ts</h1>
                 </header>
                 
 
@@ -89,21 +89,30 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Defines the typography type.
- *
- * @category Theme
- */
-export type TTypography = {};
+            <pre class="prettyprint source linenums"><code>import type { TBreakpointNames, TBreakpoint } from "@somenage/theme";
+import { theme } from "@somenage/theme";
 
 /**
- * Defines the typography.
+ * Returns an Emotion friendly media query for a breakpoint name.
  *
- * @category Theme
+ * @category Hooks
+ *
+ * @example
+ * const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'
  */
-const typography: TTypography = {};
+const useBreakpoint = (name: TBreakpointNames): string | null => {
+  const { breakpoints } = theme;
 
-export default typography;
+  const breakpoint = breakpoints.find(
+    (item: TBreakpoint) => item.name === name
+  );
+
+  const query = breakpoint?.value ? `min-width: ${breakpoint.value}px` : null;
+
+  return query ? `@media(${query})` : null;
+};
+
+export default useBreakpoint;
 </code></pre>
         </article>
     </section>
