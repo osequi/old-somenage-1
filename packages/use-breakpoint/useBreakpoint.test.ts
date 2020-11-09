@@ -1,6 +1,6 @@
 import { useBreakpoint } from ".";
 
-it("Works for multiple elements array ", () => {
+it("Works for a multiple elements array ", () => {
   expect(useBreakpoint(["mobile", "tablet"]).length).toBe(2);
 });
 
