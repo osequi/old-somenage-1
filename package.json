@@ -1,6 +1,6 @@
 {
-  "name": "somenage",
-  "version": "1.0.0",
+  "name": "@somenage/somenage",
+  "version": "0.1.0",
   "description": "A design system for Os Equi in React",
   "main": "index.js",
   "repository": "git@github.com:osequi/somenage.git",
