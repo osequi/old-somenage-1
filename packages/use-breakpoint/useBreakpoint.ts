@@ -2,12 +2,16 @@ import type { TBreakpointNames, TBreakpoint } from "@somenage/theme";
 import { theme } from "@somenage/theme";
 
 /**
- * Returns an Emotion friendly media query for a breakpoint name.
+ * Returns an *Emotion object styles* friendly media query for a breakpoint name.
+ * @param  name The breakpoint name.
+ * @return      The media query string, or null
  *
  * @category Hooks
  *
  * @example
  * const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'
+ *
+ * @see https://emotion.sh/docs/object-styles#media-queries
  */
 const useBreakpoint = (name: TBreakpointNames): string | null => {
   const { breakpoints } = theme;
