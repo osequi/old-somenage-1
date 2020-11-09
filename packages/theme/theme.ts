@@ -3,6 +3,9 @@ import { typography } from "@somenage/typography";
 
 /**
  * Defines the theme type.
+ *
+ * @category API
+ * @subcategory Theme
  */
 export type TTheme = {
   typography: TTypography;
@@ -10,6 +13,9 @@ export type TTheme = {
 
 /**
  * Defines the theme.
+ *
+ * @category API
+ * @subcategory Theme
  */
 const theme: TTheme = {
   typography: typography,
