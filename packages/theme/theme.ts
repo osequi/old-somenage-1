@@ -5,6 +5,13 @@ import type { TTypography, TTypographicGrid } from "@somenage/typography";
 import { typography } from "@somenage/typography";
 
 /**
+ * Defines the CSS notations type.
+ *
+ * The object notation is preferred. However sometimes the string notation is required.
+ */
+export type TCssNotations = "object" | "string";
+
+/**
  * Defines the theme type.
  *
  * @category Theme

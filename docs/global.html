@@ -699,7 +699,7 @@ lineHeight: 1.25,</code></pre>
         
         <span class="code-name">
             
-                useLem<span class="signature">()</span><span class="type-signature"></span>
+                useLem<span class="signature">(typographicGrid)</span><span class="type-signature"></span>
             
         </span>
     </h4>
@@ -719,6 +719,52 @@ lineHeight: 1.25,</code></pre>
 
 
 
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>typographicGrid</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The typographic grid settings. It's optional. It's better to be loaded from the theme than passed as args.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
 
 
 
@@ -759,7 +805,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="use-lem_useLem.ts.html" class="button">View Source</a>
             <span>
-                <a href="use-lem_useLem.ts.html">use-lem/useLem.ts</a>, <a href="use-lem_useLem.ts.html#line9">line 9</a>
+                <a href="use-lem_useLem.ts.html">use-lem/useLem.ts</a>, <a href="use-lem_useLem.ts.html#line16">line 16</a>
             </span>
         </p>
     
@@ -790,7 +836,7 @@ lineHeight: 1.25,</code></pre>
 
 <div class="columns">
     
-    <div class='param-desc column is-7'><p>The cell size (in pixels)</p></div>
+    <div class='param-desc column is-7'><p>The cell size (in em)</p></div>
     
     
 </div>
@@ -800,6 +846,17 @@ lineHeight: 1.25,</code></pre>
     </div>
 
 
+
+
+    <h5>Examples</h5>
+    
+    
+        <pre class="prettyprint"><code>{fontSizes: [100], lineHeight: 1.25} => (100 * 1.25) / 100 = 1.25</code></pre>
+    
+
+    
+        <pre class="prettyprint"><code>{fontSizes: [110], lineHeight: 1.25} => (110 * 1.25) / 100 = 1.375</code></pre>
+    
 
 
 </div>

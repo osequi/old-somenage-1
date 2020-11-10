@@ -1,7 +1,7 @@
 {
   "name": "@somenage/use-lem",
   "version": "0.1.0",
-  "description": "The lem hooks for Somenage",
+  "description": "The lem hook for Somenage",
   "main": "index.js",
   "repository": "git@github.com:osequi/somenage.git",
   "author": "osequi <cs@osequi.com>",
