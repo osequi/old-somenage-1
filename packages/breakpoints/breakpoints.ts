@@ -1,6 +1,5 @@
 /**
  * Defines the breakpoint names.
- *
  * @category Theme
  */
 export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
@@ -8,11 +7,7 @@ export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
 /**
  * Defines the breakpoint type.
  *
- * @example
- * {name: 'mobile', value: 320}
- *
- * @example <caption>Valid breakpoint names are set up in TBreakpointNames</caption>
- * ["mobile" | "tablet" | "laptop" | "desktop"]
+ * Please check the source for the available TBreakpointNames.
  *
  * @category Theme
  */
@@ -29,6 +24,13 @@ export type TBreakpoint = {
 
 /**
  * Defines the breakpoints.
+ *
+ * Breakpoints are an array of `{name, value}` pairs.
+ * - `name` comes from [TBreakpointNames](#TBreakpoint).
+ * - `value` is unitless but represents pixels.
+ *
+ * @example
+ * [{name: 'mobile', value: 320}, {name: 'tablet', value: 768}, ...]
  *
  * @category Theme
  */

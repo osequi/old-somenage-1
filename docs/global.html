@@ -178,6 +178,11 @@
 
 <div class="description">
     <p>Defines the breakpoints.</p>
+<p>Breakpoints are an array of <code>{name, value}</code> pairs.</p>
+<ul>
+<li><code>name</code> comes from <a href="#TBreakpoint">TBreakpointNames</a>.</li>
+<li><code>value</code> is unitless but represents pixels.</li>
+</ul>
 </div>
 
 
@@ -219,7 +224,7 @@
         <p class="tag-source">
             <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
             <span>
-                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line7">line 7</a>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line14">line 14</a>
             </span>
         </p>
     
@@ -227,6 +232,13 @@
 
 
 
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>[{name: 'mobile', value: 320}, {name: 'tablet', value: 768}, ...]</code></pre>
+    
 
 
 </div>
@@ -681,6 +693,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
 <div class="description">
     <p>Defines the breakpoint type.</p>
+<p>Please check the source for the available TBreakpointNames.</p>
 </div>
 
 
@@ -797,7 +810,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
         <p class="tag-source">
             <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
             <span>
-                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line16">line 16</a>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line23">line 23</a>
             </span>
         </p>
     
@@ -805,19 +818,6 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
 
 
-
-
-    <h5>Examples</h5>
-    
-    
-        <pre class="prettyprint"><code>{name: 'mobile', value: 320}</code></pre>
-    
-
-        <p class="code-caption">Valid breakpoint names are set up in TBreakpointNames</p>
-    
-    
-        <pre class="prettyprint"><code>["mobile" | "tablet" | "laptop" | "desktop"]</code></pre>
-    
 
 
 </div>
