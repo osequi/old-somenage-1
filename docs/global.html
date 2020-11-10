@@ -183,6 +183,8 @@
 <li><code>name</code> comes from <a href="#TBreakpoint">TBreakpointNames</a>.</li>
 <li><code>value</code> is unitless but represents pixels.</li>
 </ul>
+<p>Breakpoints follow the <a href="https://abookapart.com/products/mobile-first">mobile first design / progressive enhancement</a> pattern.
+This implies media queries on breakpoints will use the <code>min-width</code> approach. See <a href="#useBreakpoint">useBreakpoint</a>.</p>
 </div>
 
 
@@ -217,6 +219,15 @@
     
 
     
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://abookapart.com/products/mobile-first">https://abookapart.com/products/mobile-first</a></li>
+        
+            <li><a href="https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/">https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/</a></li>
+        </ul>
+    </dd>
+    
 
     
 
@@ -224,7 +235,7 @@
         <p class="tag-source">
             <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
             <span>
-                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line14">line 14</a>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line29">line 29</a>
             </span>
         </p>
     
@@ -388,7 +399,7 @@
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line20">line 20</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line24">line 24</a>
             </span>
         </p>
     
@@ -398,10 +409,19 @@
 
 
 
-    <h5>Example</h5>
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Responsive font sizes defined for all breakpoints:</p>
     
     
-        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140],
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
+lineHeight: 1.25,</code></pre>
+    
+
+        <p class="code-caption">Responsive font sizes defined are the same for tablet and up:</p>
+    
+    
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
 lineHeight: 1.25,</code></pre>
     
 
@@ -509,9 +529,6 @@ lineHeight: 1.25,</code></pre>
     
     <div class="description">
         <p>Returns <a href="https://emotion.sh/docs/object-styles#media-queries">Emotion object styles</a> friendly media queries for breakpoint names.</p>
-<p>The queries follow the <code>min-width</code> syntax suitable for <a href="https://abookapart.com/products/mobile-first">mobile first design / progressive enhancement</a>.
-Mobile first design starts with the smallest screen. Then goes after the large screens.</p>
-<p>This design system sets the first breakpoint to mobile. This means the design starts with the watch or the feature phone. See <a href="global.html#breakpoints">breakpoints</a> for details.</p>
     </div>
     
 
@@ -605,10 +622,6 @@ Mobile first design starts with the smallest screen. Then goes after the large s
     <dd class="tag-see">
         <ul>
             <li><a href="https://emotion.sh/docs/object-styles#media-queries">https://emotion.sh/docs/object-styles#media-queries</a></li>
-        
-            <li><a href="https://abookapart.com/products/mobile-first">https://abookapart.com/products/mobile-first</a></li>
-        
-            <li><a href="https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/">https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/</a></li>
         </ul>
     </dd>
     
@@ -619,7 +632,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
         <p class="tag-source">
             <a href="use-breakpoint_useBreakpoint.ts.html" class="button">View Source</a>
             <span>
-                <a href="use-breakpoint_useBreakpoint.ts.html">use-breakpoint/useBreakpoint.ts</a>, <a href="use-breakpoint_useBreakpoint.ts.html#line39">line 39</a>
+                <a href="use-breakpoint_useBreakpoint.ts.html">use-breakpoint/useBreakpoint.ts</a>, <a href="use-breakpoint_useBreakpoint.ts.html#line32">line 32</a>
             </span>
         </p>
     
@@ -829,7 +842,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
         <p class="tag-source">
             <a href="breakpoints_breakpoints.ts.html" class="button">View Source</a>
             <span>
-                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line23">line 23</a>
+                <a href="breakpoints_breakpoints.ts.html">breakpoints/breakpoints.ts</a>, <a href="breakpoints_breakpoints.ts.html#line40">line 40</a>
             </span>
         </p>
     
@@ -1072,9 +1085,10 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
     
 
-    <td class="description last"><p>Responsive font sizes for all the <a href="#TBreakpoint">breakpoints</a>.,
+    <td class="description last"><p>Responsive font sizes for the <a href="#TBreakpoint">breakpoints</a>.,
 The first number is for the default / smallest viewport, like watches.,
-The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p></td>
+The rest of the numbers are for each breakpoint, like mobile, tablet and co.,
+It's not necesary to define font sizes for all the breakpoints. Larger screens inherit settings from lower screens — following the progressive enhancment pattern.</p></td>
 </tr>
 
         
@@ -1142,7 +1156,7 @@ The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p>
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line29">line 29</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line30">line 30</a>
             </span>
         </p>
     
@@ -1152,10 +1166,19 @@ The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p>
 
 
 
-    <h5>Example</h5>
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Responsive font sizes defined for all breakpoints:</p>
     
     
-        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140],
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
+lineHeight: 1.25,</code></pre>
+    
+
+        <p class="code-caption">Responsive font sizes defined are the same for tablet and up:</p>
+    
+    
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
 lineHeight: 1.25,</code></pre>
     
 

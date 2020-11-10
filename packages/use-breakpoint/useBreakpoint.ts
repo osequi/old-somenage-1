@@ -23,25 +23,18 @@ const getBreakpoint = (name: TBreakpointNames): string | null => {
 /**
  * Returns [Emotion object styles](https://emotion.sh/docs/object-styles#media-queries) friendly media queries for breakpoint names.
  *
- * The queries follow the `min-width` syntax suitable for [mobile first design / progressive enhancement](https://abookapart.com/products/mobile-first).
- * Mobile first design starts with the smallest screen. Then goes after the large screens.
- *
- * This design system sets the first breakpoint to mobile. This means the design starts with the watch or the feature phone. See [breakpoints]{@link breakpoints} for details.
- *
  * @param  breakpoints An array of breakpoint names, or a single breakpoint name.
  * @return             An array of media queries, or a single media query, or null.
  *
  * @category Hooks
  *
  * @example <caption>An array of breakpoint names:</caption>
- * const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 1024px)']
+ * const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 768px)']
  *
  * @example <caption>Single breakpoint name:</caption>
- * const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'
+ * const tablet = useBreakpoint('tablet') => '@media(min-width: 768px)'
  *
  * @see https://emotion.sh/docs/object-styles#media-queries
- * @see https://abookapart.com/products/mobile-first
- * @see https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/
  */
 const useBreakpoint = (
   breakpoints: TBreakpointNames[] | TBreakpointNames
