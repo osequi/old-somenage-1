@@ -5,7 +5,7 @@
  * fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
  * lineHeight: 1.25,
  *
- * @example <caption>Responsive font sizes defined are the same for tablet and up:</caption>
+ * @example <caption>Responsive font sizes are the same for tablet and up:</caption>
  * fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
  * lineHeight: 1.25,
  *
@@ -40,7 +40,7 @@ export type TTypographicGrid = {
  * fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
  * lineHeight: 1.25,
  *
- * @example <caption>Responsive font sizes defined are the same for tablet and up:</caption>
+ * @example <caption>Responsive font sizes are the same for tablet and up:</caption>
  * fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
  * lineHeight: 1.25,
  *
