@@ -336,6 +336,10 @@
 
 <div class="description">
     <p>Defines the typographic grid.</p>
+<p>Font size in percentage combined with unitless line height set on the <code>&lt;body&gt;</code> tag defines a typographic grid.</p>
+<p>For example, <code>font-size: 100%; line-height: 1.25</code> defines a grid where the cell size is '<code>16px * 1.25 = 20px</code>'.</p>
+<p>When child elements define their dimension and position in <code>em</code> the underlying typographic grid will stay the same across the page. This way every element aligns perfectly to the grid, both vertically and horizontally.</p>
+<p>The typographic grid is responsive. Setting different font sizes on the <code>&lt;body&gt;</code> tag with media queries makes the grid cell scale with the screen size.</p>
 </div>
 
 
@@ -370,6 +374,13 @@
     
 
     
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="http://metamn.io/mr-ui/?selectedKind=Basics%252FTypography%2520%25E2%259C%2593%252FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%252Fbackground-panel&background=beige">http://metamn.io/mr-ui/?selectedKind=Basics%2FTypography%20%E2%9C%93%2FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%2Fbackground-panel&background=beige</a></li>
+        </ul>
+    </dd>
+    
 
     
 
@@ -377,7 +388,7 @@
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line7">line 7</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line20">line 20</a>
             </span>
         </p>
     
@@ -385,6 +396,14 @@
 
 
 
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140],
+lineHeight: 1.25,</code></pre>
+    
 
 
 </div>
@@ -820,6 +839,13 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
 
 
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>[{name: 'mobile', value: 320}, {name: 'tablet', value: 768}, ...]</code></pre>
+    
+
+
 </div>
             
                 <div class="member">
@@ -998,10 +1024,6 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
 <div class="description">
     <p>Defines the typographic grid type.</p>
-<p>Font size in percentage combined with unitless line height set on the <code>&lt;body&gt;</code> tag defines a typographic grid.</p>
-<p>For example, <code>font-size: 100%; line-height: 1.25</code> defines a grid where the cell size is '<code>16px * 1.25 = 20px</code>'.</p>
-<p>When child elements define their dimension and position in <code>em</code> the underlying typographic grid will stay the same across the page. This way every element becomes aligned perfectly to the grid, both vertically and horizontally.</p>
-<p>The typographic grid is responsive. Setting different font sizes on the <code>&lt;body&gt;</code> tag with media queries makes the grid cell scale with the screen size.</p>
 </div>
 
 
@@ -1050,7 +1072,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
     
 
-    <td class="description last"><p>Responsive font sizes for all the breakpoints.,
+    <td class="description last"><p>Responsive font sizes for all the <a href="#TBreakpoint">breakpoints</a>.,
 The first number is for the default / smallest viewport, like watches.,
 The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p></td>
 </tr>
@@ -1113,13 +1135,6 @@ The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p>
     
 
     
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="http://metamn.io/mr-ui/?selectedKind=Basics%252FTypography%2520%25E2%259C%2593%252FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%252Fbackground-panel&background=beige">http://metamn.io/mr-ui/?selectedKind=Basics%2FTypography%20%E2%9C%93%2FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%2Fbackground-panel&background=beige</a></li>
-        </ul>
-    </dd>
-    
 
     
 
@@ -1127,7 +1142,7 @@ The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p>
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line16">line 16</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line29">line 29</a>
             </span>
         </p>
     
@@ -1135,6 +1150,14 @@ The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p>
 
 
 
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>fontSizes: [100, 100, 110, 120, 140],
+lineHeight: 1.25,</code></pre>
+    
 
 
 </div>
