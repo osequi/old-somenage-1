@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> use-breakpoint/useBreakpoint.ts</title>
+  <title> typographic-grid/typographic-grid.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>use-breakpoint/useBreakpoint.ts</h1>
+                    <h1>typographic-grid/typographic-grid.ts</h1>
                 </header>
                 
 
@@ -89,63 +89,47 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import type { TBreakpointNames, TBreakpoint } from "@somenage/theme";
-import { theme } from "@somenage/theme";
-
-/**
- * Returns an *Emotion object styles* friendly media query for a breakpoint name.
- * @param  name The breakpoint name.
- * @return      The media query string, or null
+            <pre class="prettyprint source linenums"><code>/**
+ * Defines the typographic grid type.
  *
- * @ignore
+ * Font size in percentage combined with unitless line height set on the `&lt;body>` tag defines a typographic grid.
+ *
+ * For example, `font-size: 100%; line-height: 1.25` defines a grid where the cell size is '`16px * 1.25 = 20px`'.
+ *
+ * When child elements define their dimension and position in `em` the underlying typographic grid will stay the same across the page. This way every element becomes aligned perfectly to the grid, both vertically and horizontally.
+ *
+ * The typographic grid is responsive. Setting different font sizes on the `&lt;body>` tag with media queries makes the grid cell scale with the screen size.
+ *
+ * @category Theme
+ * @see http://metamn.io/mr-ui/?selectedKind=Basics%2FTypography%20%E2%9C%93%2FClassic&amp;selectedStory=Overview&amp;full=0&amp;addons=1&amp;stories=1&amp;panelRight=0&amp;addonPanel=storybook-addon-background%2Fbackground-panel&amp;background=beige
  */
-const getBreakpoint = (name: TBreakpointNames): string | null => {
-  const { breakpoints } = theme;
-
-  const breakpoint = breakpoints.find(
-    (item: TBreakpoint) => item.name === name
-  );
-
-  const query = breakpoint?.value ? `min-width: ${breakpoint.value}px` : null;
-
-  return query ? `@media(${query})` : null;
+export type TTypographicGrid = {
+  /**
+   * Responsive font sizes for all the breakpoints.
+   * The first number is for the default / smallest viewport, like watches.
+   * The rest of the numbers are for each breakpoint, like mobile, tablet and co.
+   */
+  fontSizes: number[];
+  /**
+   * Unitless line height.
+   */
+  lineHeight: number;
 };
 
 /**
- * Returns [Emotion object styles](https://emotion.sh/docs/object-styles#media-queries) friendly media queries for breakpoint names.
+ * Defines the typographic grid.
  *
- * The queries follow the `min-width` syntax suitable for [mobile first design / progressive enhancement](https://abookapart.com/products/mobile-first).
- * Mobile first design starts with the smallest screen. Then goes after the large screens.
- *
- * This design system sets the first breakpoint to mobile. This means the design starts with the watch or the feature phone. See [breakpoints]{@link breakpoints} for details.
- *
- * @param  breakpoints An array of breakpoint names, or a single breakpoint name.
- * @return             An array of media queries, or a single media query, or null.
- *
- * @category Hooks
- *
- * @example &lt;caption>An array of breakpoint names:&lt;/caption>
- * const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 1024px)']
- *
- * @example &lt;caption>Single breakpoint name:&lt;/caption>
- * const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'
- *
- * @see https://emotion.sh/docs/object-styles#media-queries
- * @see https://abookapart.com/products/mobile-first
- * @see https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/
+ * @category Theme
  */
-const useBreakpoint = (
-  breakpoints: TBreakpointNames[] | TBreakpointNames
-): string[] | string | null => {
-  return Array.isArray(breakpoints)
-    ? breakpoints &amp;&amp;
-        breakpoints.reduce((result, breakpoint) => {
-          return [...result, getBreakpoint(breakpoint)];
-        }, [])
-    : getBreakpoint(breakpoints);
+const typographicGrid: TTypographicGrid = {
+  /**
+   * The array must contain the default font size + font sizes for all the breakpoints.
+   */
+  fontSizes: [100, 100, 110, 120, 140],
+  lineHeight: 1.25,
 };
 
-export default useBreakpoint;
+export default typographicGrid;
 </code></pre>
         </article>
     </section>

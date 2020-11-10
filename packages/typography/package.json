@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:osequi/somenage.git",
   "author": "osequi <cs@osequi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@somenage/typographic-grid": "^0.1.0"
+  }
 }

@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -306,6 +306,79 @@
             
                 <div class="member">
 
+<h4 class="name" id="typographicGrid">
+    <a class="href-link" href="#typographicGrid">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        typographicGrid
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the typographic grid.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
+            <span>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line7">line 7</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
 <h4 class="name" id="typography">
     <a class="href-link" href="#typography">#</a>
     
@@ -365,7 +438,7 @@
         <p class="tag-source">
             <a href="typography_typography.ts.html" class="button">View Source</a>
             <span>
-                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line7">line 7</a>
+                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line8">line 8</a>
             </span>
         </p>
     
@@ -911,6 +984,171 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 
     </span>
 
+<h4 class="name" id="TTypographicGrid">
+    <a class="href-link" href="#TTypographicGrid">#</a>
+    
+    <span class="code-name">
+        TTypographicGrid
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the typographic grid type.</p>
+<p>Font size in percentage combined with unitless line height set on the <code>&lt;body&gt;</code> tag defines a typographic grid.</p>
+<p>For example, <code>font-size: 100%; line-height: 1.25</code> defines a grid where the cell size is '<code>16px * 1.25 = 20px</code>'.</p>
+<p>When child elements define their dimension and position in <code>em</code> the underlying typographic grid will stay the same across the page. This way every element becomes aligned perfectly to the grid, both vertically and horizontally.</p>
+<p>The typographic grid is responsive. Setting different font sizes on the <code>&lt;body&gt;</code> tag with media queries makes the grid cell scale with the screen size.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>fontSizes</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Array</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Responsive font sizes for all the breakpoints.,
+The first number is for the default / smallest viewport, like watches.,
+The rest of the numbers are for each breakpoint, like mobile, tablet and co.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>lineHeight</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">number</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>Unitless line height.</p></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="http://metamn.io/mr-ui/?selectedKind=Basics%252FTypography%2520%25E2%259C%2593%252FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%252Fbackground-panel&background=beige">http://metamn.io/mr-ui/?selectedKind=Basics%2FTypography%20%E2%9C%93%2FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%2Fbackground-panel&background=beige</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
+            <span>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line16">line 16</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
 <h4 class="name" id="TTypography">
     <a class="href-link" href="#TTypography">#</a>
     
@@ -928,6 +1166,58 @@ Mobile first design starts with the smallest screen. Then goes after the large s
 </div>
 
 
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>grid</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#TTypographicGrid">TTypographicGrid</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
 
 
 
@@ -966,7 +1256,7 @@ Mobile first design starts with the smallest screen. Then goes after the large s
         <p class="tag-source">
             <a href="typography_typography.ts.html" class="button">View Source</a>
             <span>
-                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line10">line 10</a>
+                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line15">line 15</a>
             </span>
         </p>
     

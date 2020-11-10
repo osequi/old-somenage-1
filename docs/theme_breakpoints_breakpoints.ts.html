@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> use-breakpoint/useBreakpoint.ts</title>
+  <title> theme/breakpoints/breakpoints.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -72,7 +72,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>use-breakpoint/useBreakpoint.ts</h1>
+                    <h1>theme/breakpoints/breakpoints.ts</h1>
                 </header>
                 
 
@@ -89,63 +89,48 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import type { TBreakpointNames, TBreakpoint } from "@somenage/theme";
-import { theme } from "@somenage/theme";
+            <pre class="prettyprint source linenums"><code>/**
+ * Defines the breakpoint names.
+ *
+ * @category Theme
+ */
+export type TBreakpointNames = "mobile" | "tablet" | "laptop" | "desktop";
 
 /**
- * Returns an *Emotion object styles* friendly media query for a breakpoint name.
- * @param  name The breakpoint name.
- * @return      The media query string, or null
+ * Defines the breakpoint type.
  *
- * @ignore
+ * @example
+ * {name: 'mobile', value: 320}
+ *
+ * @example &lt;caption>Valid breakpoint names are set up in TBreakpointNames&lt;/caption>
+ * ["mobile" | "tablet" | "laptop" | "desktop"]
+ *
+ * @category Theme
  */
-const getBreakpoint = (name: TBreakpointNames): string | null => {
-  const { breakpoints } = theme;
-
-  const breakpoint = breakpoints.find(
-    (item: TBreakpoint) => item.name === name
-  );
-
-  const query = breakpoint?.value ? `min-width: ${breakpoint.value}px` : null;
-
-  return query ? `@media(${query})` : null;
+export type TBreakpoint = {
+  /**
+   * The breakpoint name.
+   */
+  name: TBreakpointNames;
+  /**
+   * The breakpoint value in pixels.
+   */
+  value: number;
 };
 
 /**
- * Returns [Emotion object styles](https://emotion.sh/docs/object-styles#media-queries) friendly media queries for breakpoint names.
+ * Defines the breakpoints.
  *
- * The queries follow the `min-width` syntax suitable for [mobile first design / progressive enhancement](https://abookapart.com/products/mobile-first).
- * Mobile first design starts with the smallest screen. Then goes after the large screens.
- *
- * This design system sets the first breakpoint to mobile. This means the design starts with the watch or the feature phone. See [breakpoints]{@link breakpoints} for details.
- *
- * @param  breakpoints An array of breakpoint names, or a single breakpoint name.
- * @return             An array of media queries, or a single media query, or null.
- *
- * @category Hooks
- *
- * @example &lt;caption>An array of breakpoint names:&lt;/caption>
- * const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 1024px)']
- *
- * @example &lt;caption>Single breakpoint name:&lt;/caption>
- * const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'
- *
- * @see https://emotion.sh/docs/object-styles#media-queries
- * @see https://abookapart.com/products/mobile-first
- * @see https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/
+ * @category Theme
  */
-const useBreakpoint = (
-  breakpoints: TBreakpointNames[] | TBreakpointNames
-): string[] | string | null => {
-  return Array.isArray(breakpoints)
-    ? breakpoints &amp;&amp;
-        breakpoints.reduce((result, breakpoint) => {
-          return [...result, getBreakpoint(breakpoint)];
-        }, [])
-    : getBreakpoint(breakpoints);
-};
+const breakpoints: TBreakpoint[] = [
+  { name: "mobile", value: 320 },
+  { name: "tablet", value: 768 },
+  { name: "laptop", value: 1024 },
+  { name: "desktop", value: 1600 },
+];
 
-export default useBreakpoint;
+export default breakpoints;
 </code></pre>
         </article>
     </section>
