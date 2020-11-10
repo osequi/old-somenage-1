@@ -23,4 +23,6 @@ it("Returns a `min-width` query", () => {
 /**
  * Invalid arguments cannot be passed, like useBreakpoint() or useBreakpoint('mobilex').
  * These tests will fail instantly without useBreakpoint being called.
+ *
+ * However there are situations when the arguments are calculated runtime and TypeScript cannot catch the wrong values to be passed.
  */
