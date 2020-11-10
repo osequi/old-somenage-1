@@ -347,10 +347,6 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
 
 <div class="description">
     <p>Defines the typographic grid.</p>
-<p>Font size in percentage combined with unitless line height set on the <code>&lt;body&gt;</code> tag defines a typographic grid.</p>
-<p>For example, <code>font-size: 100%; line-height: 1.25</code> defines a grid where the cell size is '<code>16px * 1.25 = 20px</code>'.</p>
-<p>When child elements define their dimension and position in <code>em</code> the underlying typographic grid will stay the same across the page. This way every element aligns perfectly to the grid, both vertically and horizontally.</p>
-<p>The typographic grid is responsive. Setting different font sizes on the <code>&lt;body&gt;</code> tag with media queries makes the grid cell scale with the screen size.</p>
 </div>
 
 
@@ -388,7 +384,7 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
     <dt class="tag-see">See:</dt>
     <dd class="tag-see">
         <ul>
-            <li><a href="http://metamn.io/mr-ui/?selectedKind=Basics%252FTypography%2520%25E2%259C%2593%252FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%252Fbackground-panel&background=beige">http://metamn.io/mr-ui/?selectedKind=Basics%2FTypography%20%E2%9C%93%2FClassic&selectedStory=Overview&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook-addon-background%2Fbackground-panel&background=beige</a></li>
+            <li><a href="http://metamn.io/mr-ui/">http://metamn.io/mr-ui/</a></li>
         </ul>
     </dd>
     
@@ -399,7 +395,7 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line24">line 24</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line16">line 16</a>
             </span>
         </p>
     
@@ -418,7 +414,7 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
 lineHeight: 1.25,</code></pre>
     
 
-        <p class="code-caption">Responsive font sizes defined are the same for tablet and up:</p>
+        <p class="code-caption">Responsive font sizes are the same for tablet and up:</p>
     
     
         <pre class="prettyprint"><code>fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
@@ -680,13 +676,13 @@ lineHeight: 1.25,</code></pre>
         <p class="code-caption">An array of breakpoint names:</p>
     
     
-        <pre class="prettyprint"><code>const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 1024px)']</code></pre>
+        <pre class="prettyprint"><code>const [mobile, tablet] = useBreakpoint(['mobile', 'tablet']) => ['@media(min-width: 320px)','@media(min-width: 768px)']</code></pre>
     
 
         <p class="code-caption">Single breakpoint name:</p>
     
     
-        <pre class="prettyprint"><code>const tablet = useBreakpoint('tablet') => '@media(min-width: 1024px)'</code></pre>
+        <pre class="prettyprint"><code>const tablet = useBreakpoint('tablet') => '@media(min-width: 768px)'</code></pre>
     
 
 
@@ -1156,7 +1152,7 @@ It's not necesary to define font sizes for all the breakpoints. Larger screens i
         <p class="tag-source">
             <a href="typographic-grid_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line30">line 30</a>
+                <a href="typographic-grid_typographic-grid.ts.html">typographic-grid/typographic-grid.ts</a>, <a href="typographic-grid_typographic-grid.ts.html#line22">line 22</a>
             </span>
         </p>
     
@@ -1175,7 +1171,7 @@ It's not necesary to define font sizes for all the breakpoints. Larger screens i
 lineHeight: 1.25,</code></pre>
     
 
-        <p class="code-caption">Responsive font sizes defined are the same for tablet and up:</p>
+        <p class="code-caption">Responsive font sizes are the same for tablet and up:</p>
     
     
         <pre class="prettyprint"><code>fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
