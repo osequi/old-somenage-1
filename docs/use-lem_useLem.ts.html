@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Home</title>
+  <title> use-lem/useLem.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -77,38 +79,40 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>use-lem/useLem.ts</h1>
                 </header>
                 
 
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>somenage</h1>
-<p>A design system for Os Equi in React.</p></article>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { theme } from "@somenage/theme";
+
+/**
+ * Calculates the typographic grid cell size.
+ * @return The cell size (in pixels)
+ *
+ * @category Hooks
+ */
+const useLem = (): number => {
+  const {
+    typography: {
+      grid: { fontSizes, lineHeight },
+    },
+  } = theme;
+
+  const fontSize = fontSizes[0];
+
+  return (fontSize * lineHeight) / 100;
+};
+
+export default useLem;
+</code></pre>
+        </article>
     </section>
-
-
 
 
 

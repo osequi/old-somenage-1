@@ -20,3 +20,4 @@ const typography: TTypography = {
 };
 
 export default typography;
+export type { TTypographicGrid };
