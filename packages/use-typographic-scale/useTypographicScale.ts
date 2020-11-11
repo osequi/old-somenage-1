@@ -1,6 +1,7 @@
 import type { TTypographicScale } from "@somenage/theme";
 import { theme } from "@somenage/theme";
 import { useLinearScale } from "@somenage/use-linear-scale";
+import { useModularScale } from "@somenage/use-modular-scale";
 
 /**
  * Resizes the font to a value on a scale.
@@ -27,12 +28,13 @@ const useTypographicScale = (
   const { name } = scale2;
 
   const linearScale = useLinearScale(value);
+  const modularScale = useModularScale(value, typographicScale);
 
   switch (name) {
     case "linear":
       return { fontSize: `${linearScale}em` };
     case "modular":
-      return { fontSize: `2em` };
+      return { fontSize: `${modularScale}em` };
   }
 };
 
