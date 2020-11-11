@@ -1,7 +1,11 @@
 import type { TTypographicGrid } from "@somenage/typographic-grid";
 import { typographicGrid } from "@somenage/typographic-grid";
 
-import type { TTypographicScale } from "@somenage/typographic-scale";
+import type {
+  TTypographicScale,
+  TLinearScale,
+  TModularScale,
+} from "@somenage/typographic-scale";
 import { typographicScale } from "@somenage/typographic-scale";
 
 /**
@@ -31,4 +35,9 @@ const typography: TTypography = {
 };
 
 export default typography;
-export type { TTypographicGrid, TTypographicScale };
+export type {
+  TTypographicGrid,
+  TTypographicScale,
+  TLinearScale,
+  TModularScale,
+};

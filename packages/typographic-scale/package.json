@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "git@github.com:osequi/somenage.git",
   "author": "osequi <cs@osequi.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@somenage/linear-scale": "^0.1.0",
+    "@somenage/modular-scale": "^0.1.0"
+  }
 }

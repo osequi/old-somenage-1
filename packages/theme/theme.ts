@@ -5,6 +5,8 @@ import type {
   TTypography,
   TTypographicGrid,
   TTypographicScale,
+  TLinearScale,
+  TModularScale,
 } from "@somenage/typography";
 import { typography } from "@somenage/typography";
 
@@ -47,4 +49,6 @@ export type {
   TBreakpointNames,
   TTypographicGrid,
   TTypographicScale,
+  TLinearScale,
+  TModularScale,
 };

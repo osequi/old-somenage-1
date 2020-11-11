@@ -1,3 +1,6 @@
+import type { TLinearScale } from "@somenage/linear-scale";
+import type { TModularScale } from "somenage/modular-scale";
+
 /**
  * Defines the scale names.
  * @category Theme
@@ -16,7 +19,7 @@ export type TTypographicScale = {
   /**
    * The settings for the scale.
    */
-  settings: object;
+  settings?: object;
 };
 
 /**
@@ -37,3 +40,4 @@ const typographicScale: TTypographicScale = {
 };
 
 export default typographicScale;
+export type { TLinearScale, TModularScale };

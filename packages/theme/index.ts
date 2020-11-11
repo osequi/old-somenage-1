@@ -7,4 +7,6 @@ export type {
   TTypographicGrid,
   TCssNotations,
   TTypographicScale,
+  TLinearScale,
+  TModularScale,
 } from "./theme";
