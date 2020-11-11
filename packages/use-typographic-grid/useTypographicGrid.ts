@@ -5,7 +5,7 @@ import { useResponsiveFontSizes } from "@somenage/use-responsive-font-sizes";
 
 /**
  * Returns the settings following the string notation.
- * @ignoe
+ * @ignore
  */
 const stringNotation = (
   fontSize: number,
@@ -25,7 +25,7 @@ const stringNotation = (
 
 /**
  * Returns the settings following the object notation.
- * @ignoe
+ * @ignore
  */
 const objectNotation = (
   fontSize: number,
@@ -49,6 +49,14 @@ const objectNotation = (
  * @param  notation        The format of the results.
  * @param  typographicGrid The typographic grid settings. It's optional. It's better to be loaded from the theme than passed as args.
  * @return                 The CSS to be added to the `<body>`.
+ * @category Hooks
+ * @example
+ * {"fontSize": "100%", "lineHeight": 1.25", --lem": "1.25em",
+ * "@media(min-width: 1024px)": {"fontSize": "120%"},
+ * "@media(min-width: 1600px)": {"fontSize": "140%"},
+ * "@media(min-width: 320px)": {"fontSize": "100%"},
+ * "@media(min-width: 768px)": {"fontSize": "110%"}}
+
  */
 const useTypographicGrid = (
   notation: TCssNotations,
