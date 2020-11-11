@@ -1,7 +1,11 @@
 import type { TBreakpoint, TBreakpointNames } from "@somenage/breakpoints";
 import { breakpoints } from "@somenage/breakpoints";
 
-import type { TTypography, TTypographicGrid } from "@somenage/typography";
+import type {
+  TTypography,
+  TTypographicGrid,
+  TTypographicScale,
+} from "@somenage/typography";
 import { typography } from "@somenage/typography";
 
 /**
@@ -38,4 +42,9 @@ const theme: TTheme = {
 };
 
 export default theme;
-export type { TBreakpoint, TBreakpointNames, TTypographicGrid };
+export type {
+  TBreakpoint,
+  TBreakpointNames,
+  TTypographicGrid,
+  TTypographicScale,
+};

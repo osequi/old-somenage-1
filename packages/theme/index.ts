@@ -6,4 +6,5 @@ export type {
   TBreakpointNames,
   TTypographicGrid,
   TCssNotations,
+  TTypographicScale,
 } from "./theme";

@@ -22,7 +22,7 @@ export type TTypographicScale = {
 /**
  * Defines the typographic scale.
  *
- * The scale comes from one of the presets. Like linear scale, or modular scale.
+ * The scale comes from one of the presets: linear scale, modular scale.
  * @category Theme
  * @example
  * name: "linear",
