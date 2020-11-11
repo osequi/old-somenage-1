@@ -1,4 +1,5 @@
 import type { TModularScale } from "@somenage/theme";
+import { modularScale as modularScaleDefaultProps } from "@somenage/modular-scale";
 import { theme } from "@somenage/theme";
 import ms from "modularscale-js";
 
@@ -21,8 +22,11 @@ const useModularScale = (
   const {
     typography: { scale },
   } = theme;
+
   const scale2 = modularScale || scale;
-  const { settings } = scale2;
+  const scale3 =
+    scale2?.settings?.base === undefined ? modularScaleDefaultProps : scale2;
+  const { settings } = scale3;
 
   return ms(value, settings);
 };

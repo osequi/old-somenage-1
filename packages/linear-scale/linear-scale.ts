@@ -3,6 +3,7 @@
  */
 export type TLinearScale = {
   name: string;
+  settings: object;
 };
 
 /**
@@ -10,6 +11,7 @@ export type TLinearScale = {
  */
 const linearScale = {
   name: "linear",
+  settings: {},
 };
 
 export default linearScale;

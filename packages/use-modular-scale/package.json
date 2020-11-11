@@ -8,6 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "@somenage/theme": "^0.1.0",
+    "@somenage/modular-scale": "^0.1.0",
     "modularscale-js": "^3.0.1"
   }
 }
