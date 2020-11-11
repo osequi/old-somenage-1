@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> theme/theme.ts</title>
+  <title> use-responsive-font-sizes/useResponsiveFontSizes.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>theme/theme.ts</h1>
+                    <h1>use-responsive-font-sizes/useResponsiveFontSizes.ts</h1>
                 </header>
                 
 
@@ -89,47 +89,92 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import type { TBreakpoint, TBreakpointNames } from "@somenage/breakpoints";
-import { breakpoints } from "@somenage/breakpoints";
-
-import type { TTypography, TTypographicGrid } from "@somenage/typography";
-import { typography } from "@somenage/typography";
-
-/**
- * Defines the CSS notations type.
- *
- * The object notation is preferred. However sometimes the string notation is required.
- */
-export type TCssNotations = "object" | "string";
+            <pre class="prettyprint source linenums"><code>import type {
+  TTypographicGrid,
+  TCssNotations,
+  TBreakpoint,
+} from "@somenage/theme";
+import { theme } from "@somenage/theme";
+import { useBreakpoint } from "@somenage/use-breakpoint";
 
 /**
- * Defines the theme type.
- *
- * @category Theme
+ * Returns media queries following the string notation.
+ * @ignore
  */
-export type TTheme = {
-  /**
-   * The breakpoints for the theme.
-   */
-  breakpoints: TBreakpoint[];
-  /**
-   * The typography for the theme.
-   */
-  typography: TTypography;
+const stringNotation = (
+  fontSizes: number[],
+  breakpoints: TBreakpoint[]
+): string => {
+  return (
+    fontSizes &amp;&amp;
+    fontSizes.reduce((result, item, index) => {
+      const breakpoint = breakpoints[index] ? breakpoints[index] : null;
+      if (!breakpoint || !breakpoint.name) return null;
+
+      const query = useBreakpoint(breakpoint.name);
+      return query ? `${result} ${query} {body {font-size: ${item}%;}}` : null;
+    }, "")
+  );
 };
 
 /**
- * Defines the theme.
- *
- * @category Theme
+ * Returns media queries following the object notation.
+ * @ignore
  */
-const theme: TTheme = {
-  breakpoints: breakpoints,
-  typography: typography,
+const objectNotation = (
+  fontSizes: number[],
+  breakpoints: TBreakpoint[]
+): {} => {
+  let responsiveSizes = {};
+
+  fontSizes &amp;&amp;
+    fontSizes.map((item, index) => {
+      const breakpoint = breakpoints[index] ? breakpoints[index] : null;
+      if (!breakpoint || !breakpoint.name) return null;
+
+      const query = useBreakpoint(breakpoint.name);
+      if (!query) return null;
+
+      responsiveSizes[`${query}`] = { fontSize: `${item}%` };
+    });
+
+  return responsiveSizes;
 };
 
-export default theme;
-export type { TBreakpoint, TBreakpointNames, TTypographicGrid };
+/**
+ * Creates the media queries for the responsive font sizes.
+ * @param  notation        The format of the results.
+ * @param  typographicGrid The typographic grid settings. It's optional. It's better to be loaded from the theme than passed as args.
+ * @return                 The media queries for the responsive font sizes in the preferred format.
+ * @category Hooks
+ * @example
+ * "@media(min-width: 320px)": {"fontSize": "100%"},
+ * "@media(min-width: 768px)": {"fontSize": "110%"},
+ * "@media(min-width: 1024px)": {"fontSize": "120%"},
+ * "@media(min-width: 1600px)": {"fontSize": "140%"},
+ */
+const useResponsiveFontSizes = (
+  notation: TCssNotations,
+  typographicGrid?: TTypographicGrid
+): {} | string => {
+  const {
+    breakpoints,
+    typography: { grid },
+  } = theme;
+
+  const grid2 = typographicGrid || grid;
+  const { fontSizes } = grid2;
+  const fontSizesWithoutTheDefaultFontSize = fontSizes.slice(1);
+
+  switch (notation) {
+    case "string":
+      return stringNotation(fontSizesWithoutTheDefaultFontSize, breakpoints);
+    case "object":
+      return objectNotation(fontSizesWithoutTheDefaultFontSize, breakpoints);
+  }
+};
+
+export default useResponsiveFontSizes;
 </code></pre>
         </article>
     </section>

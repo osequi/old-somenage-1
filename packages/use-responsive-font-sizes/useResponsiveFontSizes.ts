@@ -55,6 +55,12 @@ const objectNotation = (
  * @param  notation        The format of the results.
  * @param  typographicGrid The typographic grid settings. It's optional. It's better to be loaded from the theme than passed as args.
  * @return                 The media queries for the responsive font sizes in the preferred format.
+ * @category Hooks
+ * @example
+ * "@media(min-width: 320px)": {"fontSize": "100%"},
+ * "@media(min-width: 768px)": {"fontSize": "110%"},
+ * "@media(min-width: 1024px)": {"fontSize": "120%"},
+ * "@media(min-width: 1600px)": {"fontSize": "140%"},
  */
 const useResponsiveFontSizes = (
   notation: TCssNotations,
