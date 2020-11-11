@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -428,6 +428,93 @@ lineHeight: 1.25,</code></pre>
             
                 <div class="member">
 
+<h4 class="name" id="typographicScale">
+    <a class="href-link" href="#typographicScale">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        typographicScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the typographic scale.</p>
+<p>The scale comes from one of the presets. Like linear scale, or modular scale.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="typographic-scale_typographic-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="typographic-scale_typographic-scale.ts.html">typographic-scale/typographic-scale.ts</a>, <a href="typographic-scale_typographic-scale.ts.html#line14">line 14</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+    <h5>Examples</h5>
+    
+    
+        <pre class="prettyprint"><code>name: "linear",
+settings: {},</code></pre>
+    
+
+    
+        <pre class="prettyprint"><code>name: 'modular',
+settings: {base:[1], ratio: 1.33}</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
 <h4 class="name" id="typography">
     <a class="href-link" href="#typography">#</a>
     
@@ -487,7 +574,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typography_typography.ts.html" class="button">View Source</a>
             <span>
-                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line8">line 8</a>
+                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line9">line 9</a>
             </span>
         </p>
     
@@ -1745,6 +1832,158 @@ lineHeight: 1.25,</code></pre>
 
     </span>
 
+<h4 class="name" id="TTypographicScale">
+    <a class="href-link" href="#TTypographicScale">#</a>
+    
+    <span class="code-name">
+        TTypographicScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the typographic scale type.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>name</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">TTypographicScaleNames</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The name of the scale. Identifies a scale preset.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>settings</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">object</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The settings for the scale.</p></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="typographic-scale_typographic-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="typographic-scale_typographic-scale.ts.html">typographic-scale/typographic-scale.ts</a>, <a href="typographic-scale_typographic-scale.ts.html#line21">line 21</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
 <h4 class="name" id="TTypography">
     <a class="href-link" href="#TTypography">#</a>
     
@@ -1807,7 +2046,30 @@ lineHeight: 1.25,</code></pre>
 
     
 
-    <td class="description last"></td>
+    <td class="description last"><p>The settings for the typographic grid.</p></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>scale</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type"><a href="global.html#TTypographicScale">TTypographicScale</a></span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>The settings for the typographic scale.</p></td>
 </tr>
 
         
@@ -1852,7 +2114,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typography_typography.ts.html" class="button">View Source</a>
             <span>
-                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line15">line 15</a>
+                <a href="typography_typography.ts.html">typography/typography.ts</a>, <a href="typography_typography.ts.html#line19">line 19</a>
             </span>
         </p>
     
