@@ -4,7 +4,7 @@ import { theme } from "@somenage/theme";
 import ms from "modularscale-js";
 
 /**
- * Returns a value from the linear scale.
+ * Returns a value from the modular scale.
  * @param  value       	The value on the scale.
  * @param  modularScale The settings for the scale.
  * @return 				The value from the scale.

@@ -1,5 +1,6 @@
 /**
  * Defines the modular scale type.
+ * @category Theme
  */
 export type TModularScale = {
   name: string;
@@ -11,6 +12,10 @@ export type TModularScale = {
 
 /**
  * Defines the modular scale.
+ * @category Theme
+ * @example
+ * name: 'modular',
+ * settings: {base:[1], ratio: 1.33}
  */
 const modularScale = {
   name: "modular",

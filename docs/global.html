@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useLinearScale">useLinearScale</a></li><li><a href="global.html#useModularScale">useModularScale</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li><li><a href="global.html#useTypographicScale">useTypographicScale</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -249,6 +249,168 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
     
     
         <pre class="prettyprint"><code>[{name: 'mobile', value: 320}, {name: 'tablet', value: 768}, ...]</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="linearScale">
+    <a class="href-link" href="#linearScale">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        linearScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the linear scale.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="linear-scale_linear-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="linear-scale_linear-scale.ts.html">linear-scale/linear-scale.ts</a>, <a href="linear-scale_linear-scale.ts.html#line9">line 9</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>name: "linear",
+settings: {},</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id="modularScale">
+    <a class="href-link" href="#modularScale">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        modularScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the modular scale.</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modular-scale_modular-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="modular-scale_modular-scale.ts.html">modular-scale/modular-scale.ts</a>, <a href="modular-scale_modular-scale.ts.html#line9">line 9</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>name: 'modular',
+settings: {base:[1], ratio: 1.33}</code></pre>
     
 
 
@@ -446,7 +608,7 @@ lineHeight: 1.25,</code></pre>
 
 <div class="description">
     <p>Defines the typographic scale.</p>
-<p>The scale comes from one of the presets. Like linear scale, or modular scale.</p>
+<p>The scale comes from one of the presets: linear scale, modular scale.</p>
 </div>
 
 
@@ -952,6 +1114,390 @@ settings: {base:[1], ratio: 1.33}</code></pre>
 
 
     
+    <h4 class="name" id="useLinearScale">
+        <a class="href-link" href="#useLinearScale">#</a>
+        
+        <span class="code-name">
+            
+                useLinearScale<span class="signature">(value, linearScale)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Returns a value from the linear scale.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The value on the scale.</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>linearScale</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The settings for the scale.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="use-linear-scale_useLinearScale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="use-linear-scale_useLinearScale.ts.html">use-linear-scale/useLinearScale.ts</a>, <a href="use-linear-scale_useLinearScale.ts.html#line12">line 12</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The value from the scale.</p></div>
+    
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>useLinearScale(0) => 1
+useLinearScale(1) => 2</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="useModularScale">
+        <a class="href-link" href="#useModularScale">#</a>
+        
+        <span class="code-name">
+            
+                useModularScale<span class="signature">(value, modularScale)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Returns a value from the modular scale.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The value on the scale.</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>modularScale</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The settings for the scale.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/modularscale/modularscale-js">https://github.com/modularscale/modularscale-js</a></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="use-modular-scale_useModularScale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="use-modular-scale_useModularScale.ts.html">use-modular-scale/useModularScale.ts</a>, <a href="use-modular-scale_useModularScale.ts.html#line17">line 17</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The value from the scale.</p></div>
+    
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>useModularScale(0) => 1
+useModularScale(1) => 1.33
+useModularScale(1, {base:[1], ratio: 1.25}) => 1.25</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
     <h4 class="name" id="useResponsiveFontSizes">
         <a class="href-link" href="#useResponsiveFontSizes">#</a>
         
@@ -1329,6 +1875,201 @@ settings: {base:[1], ratio: 1.33}</code></pre>
 
 </div>
             
+                <div class="member">
+
+
+    
+    <h4 class="name" id="useTypographicScale">
+        <a class="href-link" href="#useTypographicScale">#</a>
+        
+        <span class="code-name">
+            
+                useTypographicScale<span class="signature">(value, typographicScale)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Resizes the font to a value on a scale.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>value</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The value on the scale.</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>typographicScale</code></td>
+  
+
+  <td class="type">
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>The typographic scale to use.</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="use-typographic-scale_useTypographicScale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="use-typographic-scale_useTypographicScale.ts.html">use-typographic-scale/useTypographicScale.ts</a>, <a href="use-typographic-scale_useTypographicScale.ts.html#line18">line 18</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>The font size set to the new value.</p></div>
+    
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    
+        <pre class="prettyprint"><code>useTypographicScale(1, 'linear') => { fontSize: 2em }</code></pre>
+    
+
+    
+        <pre class="prettyprint"><code>useTypographicScale(1, 'modular') => { fontSize: 1.33em }</code></pre>
+    
+
+    
+        <pre class="prettyprint"><code>useTypographicScale(1, 'modular', {base:[1], ratio: 1.25}) => { fontSize: 1.25em }</code></pre>
+    
+
+
+</div>
+            
             </div>
         </div>
     
@@ -1494,6 +2235,358 @@ settings: {base:[1], ratio: 1.33}</code></pre>
     
         <pre class="prettyprint"><code>[{name: 'mobile', value: 320}, {name: 'tablet', value: 768}, ...]</code></pre>
     
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
+<h4 class="name" id="TLinearScale">
+    <a class="href-link" href="#TLinearScale">#</a>
+    
+    <span class="code-name">
+        TLinearScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the linear scale type.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>name</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">string</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>settings</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">object</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="linear-scale_linear-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="linear-scale_linear-scale.ts.html">linear-scale/linear-scale.ts</a>, <a href="linear-scale_linear-scale.ts.html#line15">line 15</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+    <span class="method-parameter is-pulled-right">
+        <label>Type:</label>
+        
+<span class="param-type">object</span>
+
+
+    </span>
+
+<h4 class="name" id="TModularScale">
+    <a class="href-link" href="#TModularScale">#</a>
+    
+    <span class="code-name">
+        TModularScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Defines the modular scale type.</p>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>name</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">string</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>settings</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">object</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+  
+      
+<tr class="deep-level-1">
+    
+        <td class="name"><code>base</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">Array</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+  
+      
+<tr class="deep-level-1">
+    
+        <td class="name"><code>ratio</code></td>
+    
+
+    <td class="type">
+    
+        
+<span class="param-type">number</span>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"></td>
+</tr>
+
+  
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modular-scale_modular-scale.ts.html" class="button">View Source</a>
+            <span>
+                <a href="modular-scale_modular-scale.ts.html">modular-scale/modular-scale.ts</a>, <a href="modular-scale_modular-scale.ts.html#line18">line 18</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
 
 
 </div>
@@ -1866,6 +2959,8 @@ lineHeight: 1.25,</code></pre>
             <th>Type</th>
 
             
+            <th>Attributes</th>
+            
 
             
 
@@ -1891,6 +2986,12 @@ lineHeight: 1.25,</code></pre>
     </td>
 
     
+        <td class="attributes">
+        
+
+        
+        </td>
+    
 
     
 
@@ -1913,6 +3014,14 @@ lineHeight: 1.25,</code></pre>
     
     </td>
 
+    
+        <td class="attributes">
+        
+            &lt;optional><br>
+        
+
+        
+        </td>
     
 
     
@@ -1962,7 +3071,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typographic-scale_typographic-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-scale_typographic-scale.ts.html">typographic-scale/typographic-scale.ts</a>, <a href="typographic-scale_typographic-scale.ts.html#line21">line 21</a>
+                <a href="typographic-scale_typographic-scale.ts.html">typographic-scale/typographic-scale.ts</a>, <a href="typographic-scale_typographic-scale.ts.html#line23">line 23</a>
             </span>
         </p>
     

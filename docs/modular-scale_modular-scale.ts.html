@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> typography/typography.ts</title>
+  <title> modular-scale/modular-scale.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>typography/typography.ts</h1>
+                    <h1>modular-scale/modular-scale.ts</h1>
                 </header>
                 
 
@@ -89,49 +89,34 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import type { TTypographicGrid } from "@somenage/typographic-grid";
-import { typographicGrid } from "@somenage/typographic-grid";
-
-import type {
-  TTypographicScale,
-  TLinearScale,
-  TModularScale,
-} from "@somenage/typographic-scale";
-import { typographicScale } from "@somenage/typographic-scale";
-
-/**
- * Defines the typography type.
- *
+            <pre class="prettyprint source linenums"><code>/**
+ * Defines the modular scale type.
  * @category Theme
  */
-export type TTypography = {
-  /**
-   * The settings for the typographic grid.
-   */
-  grid: TTypographicGrid;
-  /**
-   * The settings for the typographic scale.
-   */
-  scale: TTypographicScale;
+export type TModularScale = {
+  name: string;
+  settings: {
+    base: number[];
+    ratio: number;
+  };
 };
 
 /**
- * Defines the typography.
- *
+ * Defines the modular scale.
  * @category Theme
+ * @example
+ * name: 'modular',
+ * settings: {base:[1], ratio: 1.33}
  */
-const typography: TTypography = {
-  grid: typographicGrid,
-  scale: typographicScale,
+const modularScale = {
+  name: "modular",
+  settings: {
+    base: [1],
+    ratio: [1.25],
+  },
 };
 
-export default typography;
-export type {
-  TTypographicGrid,
-  TTypographicScale,
-  TLinearScale,
-  TModularScale,
-};
+export default modularScale;
 </code></pre>
         </article>
     </section>

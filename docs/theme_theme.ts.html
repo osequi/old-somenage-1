@@ -72,7 +72,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li><li><a href="global.html#useLem">useLem</a></li><li><a href="global.html#useLinearScale">useLinearScale</a></li><li><a href="global.html#useModularScale">useModularScale</a></li><li><a href="global.html#useResponsiveFontSizes">useResponsiveFontSizes</a></li><li><a href="global.html#useTypographicGrid">useTypographicGrid</a></li><li><a href="global.html#useTypographicScale">useTypographicScale</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -92,7 +92,13 @@
             <pre class="prettyprint source linenums"><code>import type { TBreakpoint, TBreakpointNames } from "@somenage/breakpoints";
 import { breakpoints } from "@somenage/breakpoints";
 
-import type { TTypography, TTypographicGrid } from "@somenage/typography";
+import type {
+  TTypography,
+  TTypographicGrid,
+  TTypographicScale,
+  TLinearScale,
+  TModularScale,
+} from "@somenage/typography";
 import { typography } from "@somenage/typography";
 
 /**
@@ -129,7 +135,14 @@ const theme: TTheme = {
 };
 
 export default theme;
-export type { TBreakpoint, TBreakpointNames, TTypographicGrid };
+export type {
+  TBreakpoint,
+  TBreakpointNames,
+  TTypographicGrid,
+  TTypographicScale,
+  TLinearScale,
+  TModularScale,
+};
 </code></pre>
         </article>
     </section>

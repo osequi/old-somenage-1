@@ -1,5 +1,6 @@
 /**
  * Defines the linear scale type.
+ * @category Theme
  */
 export type TLinearScale = {
   name: string;
@@ -8,6 +9,10 @@ export type TLinearScale = {
 
 /**
  * Defines the linear scale.
+ * @category Theme
+ * @example
+ * name: "linear",
+ * settings: {},
  */
 const linearScale = {
   name: "linear",
