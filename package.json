@@ -15,8 +15,7 @@
     "test": "yarn jest --watchAll",
     "docs": "jsdoc -c jsdoc.json",
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec --scope @osequi/somenage-theme -- yarn build",
-    "publish": "lerna publish"
+    "build": "lerna exec --scope @osequi/somenage-theme -- yarn build"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
