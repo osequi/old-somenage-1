@@ -8,8 +8,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "demo"
+    "packages/*"
   ],
   "scripts": {
     "test": "yarn jest --watchAll",
