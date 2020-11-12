@@ -1,9 +1,0 @@
-{
-  "name": "@somenage/linear-scale",
-  "version": "0.1.0",
-  "description": "The linear scale settings for Somenage",
-  "main": "index.js",
-  "repository": "git@github.com:osequi/somenage.git",
-  "author": "osequi <cs@osequi.com>",
-  "license": "MIT"
-}

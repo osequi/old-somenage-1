@@ -1,24 +1,39 @@
 {
-  "name": "@somenage/somenage",
+  "name": "@osequi/somenage",
   "version": "0.1.0",
   "description": "A design system for Os Equi in React",
-  "main": "index.js",
+  "homepage": "https://osequi.com/somenage",
   "repository": "git@github.com:osequi/somenage.git",
   "author": "osequi <cs@osequi.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "test": "yarn jest --watchAll",
-    "docs": "jsdoc -c jsdoc.json"
+    "docs": "jsdoc -c jsdoc.json",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "lerna exec --scope @osequi/somenage-theme -- yarn build",
+    "publish": "lerna publish"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "babel-preset-minify": "^0.5.1",
     "better-docs": "^2.3.2",
     "jest": "^26.6.3",
     "jsdoc": "^3.6.6",
+    "lerna": "^3.22.1",
     "ts-jest": "^26.4.4",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
   }
 }

@@ -1,9 +1,0 @@
-{
-  "name": "@somenage/typographic-grid",
-  "version": "0.1.0",
-  "description": "The typographic grid settings for Somenage",
-  "main": "index.js",
-  "repository": "git@github.com:osequi/somenage.git",
-  "author": "osequi <cs@osequi.com>",
-  "license": "MIT"
-}

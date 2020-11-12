@@ -1,13 +1,18 @@
 {
-  "name": "@somenage/theme",
+  "name": "@osequi/somenage-theme",
   "version": "0.1.0",
-  "description": "The theme settings for Somenage",
-  "main": "index.js",
+  "description": "The theme for Soemnage",
+  "homepage": "https://osequi.com/somenage",
   "repository": "git@github.com:osequi/somenage.git",
   "author": "osequi <cs@osequi.com>",
   "license": "MIT",
-  "dependencies": {
-    "@somenage/typography": "^0.1.0",
-    "@somenage/breakpoints": "^0.1.0"
+  "main": "dist/index.js",
+  "scripts": {
+    "generate": "generact",
+    "build": "babel ./src -d ./dist -s inline --ignore 'src/**/stories.js','src/**/*.spec.js'"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.1",
+    "generact": "^0.4.0"
   }
 }
