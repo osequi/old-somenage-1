@@ -1,0 +1,29 @@
+{
+  "name": "@osequi/somenage-theme-typographic-grid",
+  "version": "0.1.0",
+  "description": "The typographic grid settings for the theme",
+  "author": "osequi <cs@osequi.com>",
+  "homepage": "https://osequi.com/somenage/theme/somenage-theme-typographic-grid",
+  "license": "ISC",
+  "main": "lib/typographic-grid.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osequi/somenage.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/osequi/somenage/issues"
+  }
+}
