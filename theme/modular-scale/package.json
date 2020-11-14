@@ -1,11 +1,11 @@
 {
-  "name": "@osequi/somenage-theme-linear-scale",
+  "name": "@osequi/somenage-theme-modular-scale",
   "version": "0.1.0",
-  "description": "The linear scale settings for the theme",
+  "description": "The modular scale settings for the theme.",
   "author": "osequi <cs@osequi.com>",
-  "homepage": "https://osequi.com/somenage/theme/somenage-theme-linear-scale",
+  "homepage": "https://osequi.com/somenage/theme/somenage-theme-modular-scale",
   "license": "MIT",
-  "main": "lib/linear-scale.js",
+  "main": "lib/modular-scale.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
