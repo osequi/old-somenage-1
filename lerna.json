@@ -1,9 +1,5 @@
 {
-  "packages": [
-    "packages/*",
-    "apps/*"
-  ],
+  "packages": ["theme/*", "hooks/*", "components/*", "apps/*"],
   "version": "independent",
-  "npmClient": "yarn",
-  "useWorkspaces": true
+  "npmClient": "yarn"
 }

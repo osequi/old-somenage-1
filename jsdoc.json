@@ -1,12 +1,12 @@
 {
   "source": {
-    "include": ["./packages"],
+    "include": ["./theme", "./hooks", "./components"],
     "includePattern": "\\.(jsx|js|ts|tsx)$",
     "excludePattern": "(node_modules/|docs)"
   },
   "opts": {
     "template": "node_modules/better-docs",
-    "destination": "docs/",
+    "destination": "_docs/",
     "encoding": "utf8",
     "readme": "README.md",
     "recurse": true,
