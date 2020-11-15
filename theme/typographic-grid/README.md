@@ -3,6 +3,8 @@
 ## typographicGrid
 Defines the typographic grid.
 
+The typographic grid is defined by the font size and line height. It is set on the `<body>` tag and it can be set to be responsive..
+
 **Kind**: global variable  
 **Category**: Theme  
 **See**

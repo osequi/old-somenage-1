@@ -1,7 +1,9 @@
 /**
  * Defines the typographic scale.
  *
+ * The scale defines how typographic elements vary in size compared to the body text.
  * The scale comes from one of the presets: linear scale, modular scale.
+ *
  * @category Theme
  * @example
  * name: "linear",

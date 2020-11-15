@@ -3,6 +3,8 @@
 ## linearScale
 Defines the linear scale.
 
+On linear scale values scale with 1 unit. See 'useLinearScale'.
+
 **Kind**: global variable  
 **Category**: Theme  
 **Example**  

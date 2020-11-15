@@ -12,7 +12,8 @@
     "boot": "lerna bootstrap",
     "docs": "jsdoc -c jsdoc.json",
     "readme": "lerna exec --parallel -- yarn readme",
-    "tsc": "lerna exec --parallel -- tsc --watch"
+    "tsc": "lerna exec --parallel -- tsc --watch",
+    "tsc2": "lerna exec --parallel -- tsc"
   },
   "devDependencies": {
     "better-docs": "^2.3.2",

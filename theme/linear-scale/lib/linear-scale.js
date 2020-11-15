@@ -1,5 +1,8 @@
 /**
  * Defines the linear scale.
+ *
+ * On linear scale values scale with 1 unit. See 'useLinearScale'.
+ *
  * @category Theme
  * @example
  * name: "linear",
