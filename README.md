@@ -20,6 +20,6 @@ A design system for Os Equi in React.
 
 - Run the global task: `"readme": "lerna exec --parallel -- yarn readme",`
 
-### Global API docs in HTML
+#### Global API docs in HTML
 
 - Run the global task: `"docs": "jsdoc -c jsdoc.json",`
