@@ -22,12 +22,17 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "readme": "jsdoc2md lib/breakpoints.js > README.md"
+    "readme": "jsdoc2md --configure ../../jsdoc2md.json src/breakpoints.ts > README.md"
   },
   "bugs": {
     "url": "https://github.com/osequi/somenage/issues"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "jsdoc-babel": "^0.5.0",
     "jsdoc-to-markdown": "^6.0.1"
   }
 }
