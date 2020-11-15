@@ -19,10 +19,11 @@ const modularscale_js_1 = __importDefault(require("modularscale-js"));
  * @see https://github.com/modularscale/modularscale-js
  */
 const useModularScale = (value, modularScale) => {
-    var _a;
     const { typography: { scale }, } = somenage_theme_1.theme;
     const scale2 = modularScale || scale;
-    const scale3 = ((_a = scale2 === null || scale2 === void 0 ? void 0 : scale2.settings) === null || _a === void 0 ? void 0 : _a.base) === undefined ? somenage_theme_modular_scale_1.modularScale : scale2;
+    const scale3 = scale2 && scale2.settings && scale2.settings.hasOwnProperty("base")
+        ? somenage_theme_modular_scale_1.modularScale
+        : scale2;
     const { settings } = scale3;
     return modularscale_js_1.default(value, settings);
 };

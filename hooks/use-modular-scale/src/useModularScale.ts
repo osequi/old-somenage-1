@@ -1,5 +1,5 @@
 import type { TModularScale } from "@osequi/somenage-theme";
-import { modularScale as modularScaleDefaultProps } from "@osequi/somenage-theme-modular-scale";
+import { modularScale } from "@osequi/somenage-theme-modular-scale";
 import { theme } from "@osequi/somenage-theme";
 import ms from "modularscale-js";
 
@@ -17,16 +17,16 @@ import ms from "modularscale-js";
  */
 const useModularScale = (
   value: number,
-  modularScale?: TModularScale
+  modularScaleFromProps?: TModularScale
 ): number => {
   const {
     typography: { scale },
   } = theme;
 
-  const scale2 = modularScale || scale;
+  const scale2 = modularScaleFromProps || scale;
   const scale3 =
     scale2 && scale2.settings && scale2.settings.hasOwnProperty("base")
-      ? modularScaleDefaultProps
+      ? modularScale
       : scale2;
   const { settings } = scale3;
 
