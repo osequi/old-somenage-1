@@ -1,0 +1,33 @@
+{
+  "name": "@osequi/somenage-use-modular-scale",
+  "version": "0.1.0",
+  "description": "The modular scale hook for Somenage",
+  "author": "osequi <cs@osequi.com>",
+  "homepage": "https://osequi.com/somenage/theme/use-lem",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osequi/somenage.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "readme": "jsdoc2md lib/useModularScale.js > README.md"
+  },
+  "bugs": {
+    "url": "https://github.com/osequi/somenage/issues"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^6.0.1",
+    "@osequi/somenage-theme": "^0.1.0",
+    "@osequi/somenage-theme-modular-scale": "^0.1.0",
+    "modularscale-js": "^3.0.1"
+  }
+}

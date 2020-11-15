@@ -21,11 +21,11 @@ export type TModularScale = {
  * settings: {base:[1], ratio: 1.33}
  * @see https://github.com/modularscale/modularscale-js
  */
-const modularScale = {
+const modularScale: TModularScale = {
   name: "modular",
   settings: {
     base: [1],
-    ratio: [1.25],
+    ratio: 1.25,
   },
 };
 

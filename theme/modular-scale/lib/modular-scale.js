@@ -15,7 +15,7 @@ const modularScale = {
     name: "modular",
     settings: {
         base: [1],
-        ratio: [1.25],
+        ratio: 1.25,
     },
 };
 exports.default = modularScale;
