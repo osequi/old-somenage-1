@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.breakpointNames = void 0;
 /**
  * Collects the breakpoint names into an array.
  *
@@ -6,7 +9,8 @@
  *
  * @ignore
  */
-var breakpointNames = ["mobile", "tablet", "laptop", "desktop"];
+const breakpointNames = ["mobile", "tablet", "laptop", "desktop"];
+exports.breakpointNames = breakpointNames;
 /**
  * Defines the breakpoints for the theme.
  *
@@ -25,12 +29,11 @@ var breakpointNames = ["mobile", "tablet", "laptop", "desktop"];
  *
  * @category Theme
  */
-var breakpoints = [
+const breakpoints = [
     { name: "mobile", value: 320 },
     { name: "tablet", value: 768 },
     { name: "laptop", value: 1024 },
     { name: "desktop", value: 1600 },
 ];
-export default breakpoints;
-export { breakpointNames };
+exports.default = breakpoints;
 //# sourceMappingURL=breakpoints.js.map

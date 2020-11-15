@@ -1,9 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the theme.
  *
  * @category Theme
  */
-var theme = {
+const theme = {
     breakpoints: [
         { name: "mobile", value: 320 },
         { name: "tablet", value: 768 },
@@ -15,5 +17,5 @@ var theme = {
         scale: { name: "linear", settings: {} },
     },
 };
-export default theme;
+exports.default = theme;
 //# sourceMappingURL=theme.js.map

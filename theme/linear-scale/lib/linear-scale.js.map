@@ -1,1 +1,1 @@
-{"version":3,"file":"linear-scale.js","sourceRoot":"","sources":["../src/linear-scale.ts"],"names":[],"mappings":"AASA;;;;;;;;;GASG;AACH,IAAM,WAAW,GAAG;IAClB,IAAI,EAAE,QAAQ;IACd,QAAQ,EAAE,EAAE;CACb,CAAC;AAEF,eAAe,WAAW,CAAC"}
+{"version":3,"file":"linear-scale.js","sourceRoot":"","sources":["../src/linear-scale.ts"],"names":[],"mappings":";;AASA;;;;;;;;;GASG;AACH,MAAM,WAAW,GAAG;IAClB,IAAI,EAAE,QAAQ;IACd,QAAQ,EAAE,EAAE;CACb,CAAC;AAEF,kBAAe,WAAW,CAAC"}

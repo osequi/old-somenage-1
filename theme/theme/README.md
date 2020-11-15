@@ -3,5 +3,5 @@
 ## theme
 Defines the theme.
 
-**Kind**: global variable  
+**Kind**: global constant  
 **Category**: Theme  

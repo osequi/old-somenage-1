@@ -1,11 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the typography.
  *
  * @category Theme
  */
-var typography = {
+const typography = {
     grid: { fontSizes: [100, 100, 110, 120, 140], lineHeight: 1.25 },
     scale: { name: "linear", settings: {} },
 };
-export default typography;
+exports.default = typography;
 //# sourceMappingURL=typography.js.map

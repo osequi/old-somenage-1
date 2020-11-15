@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the typographic grid.
  *
@@ -15,9 +17,9 @@
  * @see [Long description](https://bit.ly/3pew04j)
  * @see [Short description](https://bit.ly/2IoeYjt)
  */
-var typographicGrid = {
+const typographicGrid = {
     fontSizes: [100, 100, 110, 120, 140],
     lineHeight: 1.25,
 };
-export default typographicGrid;
+exports.default = typographicGrid;
 //# sourceMappingURL=typographic-grid.js.map

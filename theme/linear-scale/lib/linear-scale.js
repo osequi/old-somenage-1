@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the linear scale.
  *
@@ -8,9 +10,9 @@
  * name: "linear",
  * settings: {},
  */
-var linearScale = {
+const linearScale = {
     name: "linear",
     settings: {},
 };
-export default linearScale;
+exports.default = linearScale;
 //# sourceMappingURL=linear-scale.js.map

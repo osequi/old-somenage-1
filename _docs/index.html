@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Hooks</h2><h3>Global</h3><ul><li><a href="global.html#useBreakpoint">useBreakpoint</a></li></ul></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#theme">theme</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -106,6 +106,20 @@
     <section>
         <article><h1>somenage</h1>
 <p>A design system for Os Equi in React.</p>
+<h2>Dev</h2>
+<h3>Add a new package</h3>
+<ol>
+<li><code>lerna create &lt;package-name&gt;</code></li>
+<li>Remove <code>__tests__</code></li>
+<li>Add <code>tsconfig.json</code></li>
+<li>Update the <code>package.json</code>.</li>
+<li><code>lerna bootstrap</code></li>
+<li>Add code into <code>/src</code></li>
+<li><code>yarn tsc</code></li>
+<li><code>yarn test</code></li>
+<li><code>yarn docs</code></li>
+<li><code>yarn readme</code></li>
+</ol>
 <h2>Devops</h2>
 <h3>TS to JS</h3>
 <ul>

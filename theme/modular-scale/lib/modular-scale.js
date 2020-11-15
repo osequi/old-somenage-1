@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the modular scale.
  *
@@ -9,12 +11,12 @@
  * settings: {base:[1], ratio: 1.33}
  * @see https://github.com/modularscale/modularscale-js
  */
-var modularScale = {
+const modularScale = {
     name: "modular",
     settings: {
         base: [1],
         ratio: [1.25],
     },
 };
-export default modularScale;
+exports.default = modularScale;
 //# sourceMappingURL=modular-scale.js.map

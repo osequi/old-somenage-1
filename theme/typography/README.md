@@ -3,5 +3,5 @@
 ## typography
 Defines the typography.
 
-**Kind**: global variable  
+**Kind**: global constant  
 **Category**: Theme  

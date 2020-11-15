@@ -1,11 +1,11 @@
 {
-  "name": "theme",
+  "name": "@osequi/somenage-theme",
   "version": "0.1.0",
-  "description": "> TODO: description",
+  "description": "The theme settings for Somenage.",
   "author": "osequi <cs@osequi.com>",
   "homepage": "https://osequi.com/somenage/theme/theme",
   "license": "MIT",
-  "main": "lib/theme.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
