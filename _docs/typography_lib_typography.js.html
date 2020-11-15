@@ -7,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> typographic-grid/lib/typographic-grid.d.ts</title>
+  <title> typography/lib/typography.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>typographic-grid/lib/typographic-grid.d.ts</h1>
+                    <h1>typography/lib/typography.js</h1>
                 </header>
                 
 
@@ -89,52 +89,19 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Defines the typographic grid type.
- *
- * @example &lt;caption>Responsive font sizes defined for all breakpoints:&lt;/caption>
- * fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
- * lineHeight: 1.25,
- *
- * @example &lt;caption>Responsive font sizes are the same for tablet and up:&lt;/caption>
- * fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
- * lineHeight: 1.25,
- *
- * @category Theme
- */
-export declare type TTypographicGrid = {
-    /**
-     * Responsive font sizes for the [breakpoints](#TBreakpoint).
-     * The first number is for the default / smallest viewport, like watches.
-     * The rest of the numbers are for each breakpoint, like mobile, tablet and co.
-     * It's not necesary to define font sizes for all the breakpoints. Larger screens inherit settings from lower screens &amp;mdash; following the progressive enhancment pattern.
-     */
-    fontSizes: number[];
-    /**
-     * Unitless line height.
-     */
-    lineHeight: number;
-};
+            <pre class="prettyprint source linenums"><code>import { typographicGrid } from "@osequi/somenage-theme-typographic-grid";
+import { typographicScale } from "@osequi/somenage-theme-typographic-scale";
 /**
- * Defines the typographic grid.
- *
- * The typographic grid is defined by the font size and line height. It is set on the `&lt;body>` tag and it can be set to be responsive..
- *
- * @example &lt;caption>Responsive font sizes defined for all breakpoints:&lt;/caption>
- * fontSizes: [100, 100, 110, 120, 140], // watch, mobile, tablet, laptop, desktop
- * lineHeight: 1.25,
- *
- * @example &lt;caption>Responsive font sizes are the same for tablet and up:&lt;/caption>
- * fontSizes: [100, 100, 110], // watch, mobile, tablet. laptop and desktop will have the font size defined for tablet.
- * lineHeight: 1.25,
+ * Defines the typography.
  *
  * @category Theme
- * @see [Long description](https://bit.ly/3pew04j)
- * @see [Short description](https://bit.ly/2IoeYjt)
  */
-declare const typographicGrid: TTypographicGrid;
-export default typographicGrid;
-</code></pre>
+var typography = {
+    grid: typographicGrid,
+    scale: typographicScale,
+};
+export default typography;
+//# sourceMappingURL=typography.js.map</code></pre>
         </article>
     </section>
 

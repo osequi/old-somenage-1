@@ -1,9 +1,9 @@
 {
-  "name": "@osequi/somenage-theme-typographic-scale",
+  "name": "@osequi/somenage-theme-typography",
   "version": "0.1.0",
-  "description": "The typographic scale settings for Somenage",
+  "description": "The typography settings for Somenage",
   "author": "osequi <cs@osequi.com>",
-  "homepage": "https://osequi.com/somenage/theme/somenage-theme-typographic-scale",
+  "homepage": "https://osequi.com/somenage/theme/typography",
   "license": "MIT",
   "main": "lib/index.js",
   "directories": {
@@ -13,23 +13,20 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/osequi/somenage.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "readme": "jsdoc2md lib/typographic-scale.js > README.md"
+    "readme": "jsdoc2md lib/typography.js > README.md"
   },
   "bugs": {
     "url": "https://github.com/osequi/somenage/issues"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^6.0.1",
-    "@osequi/somenage-theme-linear-scale": "^0.1.0",
-    "@osequi/somenage-theme-modular-scale": "^0.1.0"
+    "@osequi/somenage-theme-typographic-grid": "^0.1.0",
+    "@osequi/somenage-theme-typographic-scale": "^0.1.0",
+    "jsdoc-to-markdown": "^6.0.1"
   }
 }

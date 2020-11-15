@@ -70,7 +70,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Theme</h2><h3>Global</h3><ul><li><a href="global.html#breakpoints">breakpoints</a></li><li><a href="global.html#linearScale">linearScale</a></li><li><a href="global.html#modularScale">modularScale</a></li><li><a href="global.html#typographicGrid">typographicGrid</a></li><li><a href="global.html#typographicScale">typographicScale</a></li><li><a href="global.html#typography">typography</a></li></ul></div>
                 
             </nav>
         </div>
@@ -121,6 +121,9 @@
 <h4>README.md for every package</h4>
 <ul>
 <li>Run the global task: <code>&quot;readme&quot;: &quot;lerna exec --parallel -- yarn readme&quot;,</code></li>
+<li>This will generate the README from the compiled <code>.js</code>. Make sure first the <code>.ts</code> files ar ecompile dto <code>.js</code> the generate the README.</li>
+<li>If want to generate from <code>.ts</code> change the local task to : <code>&quot;readme&quot;: &quot;jsdoc2md --configure ../../jsdoc2md.json src/breakpoints.ts &gt; README.md&quot;</code></li>
+<li>For now generating from <code>js</code> makes a better result than generating from <code>.ts</code></li>
 </ul>
 <h4>Global API docs in HTML</h4>
 <ul>
