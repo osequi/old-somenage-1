@@ -1,11 +1,11 @@
 {
-  "name": "@osequi/somenage-theme-breakpoints",
+  "name": "theme",
   "version": "0.1.0",
-  "description": "The breakpoint settings for the theme",
+  "description": "> TODO: description",
   "author": "osequi <cs@osequi.com>",
-  "homepage": "https://osequi.com/somenage/theme/somenage-theme-breakpoints",
+  "homepage": "https://osequi.com/somenage/theme/theme",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "lib/theme.js",
   "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
@@ -14,21 +14,20 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/osequi/somenage.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "readme": "jsdoc2md lib/breakpoints.js > README.md"
+    "readme": "jsdoc2md lib/theme.js > README.md"
   },
   "bugs": {
     "url": "https://github.com/osequi/somenage/issues"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^6.0.1"
+    "jsdoc-to-markdown": "^6.0.1",
+    "@osequi/somenage-theme-typography": "^0.1.0",
+    "@osequi/somenage-theme-breakpoints": "^0.1.0"
   }
 }

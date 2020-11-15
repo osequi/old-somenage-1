@@ -1,13 +1,11 @@
-import { typographicGrid } from "@osequi/somenage-theme-typographic-grid";
-import { typographicScale } from "@osequi/somenage-theme-typographic-scale";
 /**
  * Defines the typography.
  *
  * @category Theme
  */
 var typography = {
-    grid: typographicGrid,
-    scale: typographicScale,
+    grid: { fontSizes: [100, 100, 110, 120, 140], lineHeight: 1.25 },
+    scale: { name: "linear", settings: {} },
 };
 export default typography;
 //# sourceMappingURL=typography.js.map

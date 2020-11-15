@@ -1,12 +1,10 @@
 import type { TTypographicGrid } from "@osequi/somenage-theme-typographic-grid";
-import { typographicGrid } from "@osequi/somenage-theme-typographic-grid";
 
 import type {
   TTypographicScale,
   TLinearScale,
   TModularScale,
 } from "@osequi/somenage-theme-typographic-scale";
-import { typographicScale } from "@osequi/somenage-theme-typographic-scale";
 
 /**
  * Defines the typography type.
@@ -30,8 +28,8 @@ export type TTypography = {
  * @category Theme
  */
 const typography: TTypography = {
-  grid: typographicGrid,
-  scale: typographicScale,
+  grid: { fontSizes: [100, 100, 110, 120, 140], lineHeight: 1.25 },
+  scale: { name: "linear", settings: {} },
 };
 
 export default typography;
