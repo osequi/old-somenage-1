@@ -1,7 +1,7 @@
 {
-  "name": "@osequi/somenage-use-lem",
+  "name": "@osequi/somenage-use-linear-scale",
   "version": "0.1.0",
-  "description": "The lem hook for Somenage",
+  "description": "The linear scale hook for Somenage",
   "author": "osequi <cs@osequi.com>",
   "homepage": "https://osequi.com/somenage/theme/use-lem",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "readme": "jsdoc2md lib/useLem.js > README.md"
+    "readme": "jsdoc2md lib/useLinearScale.js > README.md"
   },
   "bugs": {
     "url": "https://github.com/osequi/somenage/issues"

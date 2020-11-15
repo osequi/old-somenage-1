@@ -1,5 +1,5 @@
 {
-  "name": "use-breakpoint",
+  "name": "@osequi/somenage-use-breakpoint",
   "version": "0.1.0",
   "description": "The breakpoint hooks for Somenage",
   "author": "osequi <cs@osequi.com>",
