@@ -6,14 +6,16 @@ A design system for Os Equi in React.
 
 ### Add a new package
 
-1. `lerna create theme`
-2. Update the `package.json`.
-3. Remove `__tests__`
-4. Add `tsconfig.json`
+1. `lerna create <package-name>`
+2. Remove `__tests__`
+3. Add `tsconfig.json`
+4. Update the `package.json`.
 5. `lerna bootstrap`
-6. Add code into `src`
+6. Add code into `/src`
 7. `yarn tsc`
 8. `yarn test`
+9. `yarn docs`
+10. `yarn readme`
 
 ## Devops
 

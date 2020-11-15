@@ -1,11 +1,7 @@
-# `theme`
+<a name="theme"></a>
 
-> TODO: description
+## theme
+Defines the theme.
 
-## Usage
-
-```
-const theme = require('theme');
-
-// TODO: DEMONSTRATE API
-```
+**Kind**: global variable  
+**Category**: Theme  
