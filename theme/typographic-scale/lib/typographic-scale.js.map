@@ -1,1 +1,1 @@
-{"version":3,"file":"typographic-scale.js","sourceRoot":"","sources":["../src/typographic-scale.ts"],"names":[],"mappings":";;AAwBA;;;;;;;;;;;GAWG;AACH,MAAM,gBAAgB,GAAsB;IAC1C,IAAI,EAAE,QAAQ;IACd,QAAQ,EAAE,EAAE;CACb,CAAC;AAEF,kBAAe,gBAAgB,CAAC"}
+{"version":3,"file":"typographic-scale.js","sourceRoot":"","sources":["../src/typographic-scale.ts"],"names":[],"mappings":"AAwBA;;;;;;;;;;;GAWG;AACH,IAAM,gBAAgB,GAAsB;IAC1C,IAAI,EAAE,QAAQ;IACd,QAAQ,EAAE,EAAE;CACb,CAAC;AAEF,eAAe,gBAAgB,CAAC"}

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the typographic scale.
  *
@@ -12,9 +10,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * name: 'modular',
  * settings: {base:[1], ratio: 1.33}
  */
-const typographicScale = {
+var typographicScale = {
     name: "linear",
     settings: {},
 };
-exports.default = typographicScale;
+export default typographicScale;
 //# sourceMappingURL=typographic-scale.js.map

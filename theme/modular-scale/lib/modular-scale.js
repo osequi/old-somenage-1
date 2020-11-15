@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the modular scale.
  * @category Theme
@@ -7,12 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * name: 'modular',
  * settings: {base:[1], ratio: 1.33}
  */
-const modularScale = {
+var modularScale = {
     name: "modular",
     settings: {
         base: [1],
         ratio: [1.25],
     },
 };
-exports.default = modularScale;
+export default modularScale;
 //# sourceMappingURL=modular-scale.js.map

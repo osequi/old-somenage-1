@@ -36,7 +36,7 @@ export type TBreakpoint = {
 };
 
 /**
- * Defines the breakpoints.
+ * Defines the breakpoints for the theme.
  *
  * Breakpoints are an array of `{name, value}` pairs.
  * - `name` comes from [TBreakpointNames](#TBreakpoint).

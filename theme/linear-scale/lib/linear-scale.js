@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * Defines the linear scale.
  * @category Theme
@@ -7,9 +5,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * name: "linear",
  * settings: {},
  */
-const linearScale = {
+var linearScale = {
     name: "linear",
     settings: {},
 };
-exports.default = linearScale;
+export default linearScale;
 //# sourceMappingURL=linear-scale.js.map

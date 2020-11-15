@@ -11,6 +11,7 @@
     "test": "yarn jest --watchAll",
     "boot": "lerna bootstrap",
     "docs": "jsdoc -c jsdoc.json",
+    "readme": "lerna exec --parallel -- yarn readme",
     "tsc": "lerna exec --parallel -- tsc --watch"
   },
   "devDependencies": {

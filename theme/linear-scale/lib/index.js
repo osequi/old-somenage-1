@@ -1,9 +1,2 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.linearScale = void 0;
-var linear_scale_1 = require("./linear-scale");
-Object.defineProperty(exports, "linearScale", { enumerable: true, get: function () { return __importDefault(linear_scale_1).default; } });
+export { default as linearScale } from "./linear-scale";
 //# sourceMappingURL=index.js.map
