@@ -173,14 +173,14 @@
 
 
 <div class="description">
-    <p>Defines the breakpoints.</p>
+    <p>Defines the breakpoints for the theme.</p>
 <p>Breakpoints are an array of <code>{name, value}</code> pairs.</p>
 <ul>
-<li><code>name</code> comes from <a href="#TBreakpoint">TBreakpointNames</a>.</li>
+<li><code>name</code> comes from <code>TBreakpointNames</code>.</li>
 <li><code>value</code> is unitless but represents pixels.</li>
 </ul>
 <p>Breakpoints follow the <a href="https://abookapart.com/products/mobile-first">mobile first design / progressive enhancement</a> pattern.
-This implies media queries on breakpoints will use the <code>min-width</code> approach. See <a href="#useBreakpoint">useBreakpoint</a>.</p>
+This implies media queries on breakpoints will use the <code>min-width</code> approach. See 'useBreakpoints'.</p>
 </div>
 
 
@@ -269,14 +269,14 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
 
 
 <div class="description">
-    <p>Defines the breakpoints.</p>
+    <p>Defines the breakpoints for the theme.</p>
 <p>Breakpoints are an array of <code>{name, value}</code> pairs.</p>
 <ul>
-<li><code>name</code> comes from <a href="#TBreakpoint">TBreakpointNames</a>.</li>
+<li><code>name</code> comes from <code>TBreakpointNames</code>.</li>
 <li><code>value</code> is unitless but represents pixels.</li>
 </ul>
 <p>Breakpoints follow the <a href="https://abookapart.com/products/mobile-first">mobile first design / progressive enhancement</a> pattern.
-This implies media queries on breakpoints will use the <code>min-width</code> approach. See <a href="#useBreakpoint">useBreakpoint</a>.</p>
+This implies media queries on breakpoints will use the <code>min-width</code> approach. See 'useBreakpoints'.</p>
 </div>
 
 
@@ -362,6 +362,7 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
 
 <div class="description">
     <p>Defines the linear scale.</p>
+<p>On linear scale values scale with 1 unit. See 'useLinearScale'.</p>
 </div>
 
 
@@ -403,7 +404,7 @@ This implies media queries on breakpoints will use the <code>min-width</code> ap
         <p class="tag-source">
             <a href="linear-scale_lib_linear-scale.js.html" class="button">View Source</a>
             <span>
-                <a href="linear-scale_lib_linear-scale.js.html">linear-scale/lib/linear-scale.js</a>, <a href="linear-scale_lib_linear-scale.js.html#line8">line 8</a>
+                <a href="linear-scale_lib_linear-scale.js.html">linear-scale/lib/linear-scale.js</a>, <a href="linear-scale_lib_linear-scale.js.html#line11">line 11</a>
             </span>
         </p>
     
@@ -443,6 +444,7 @@ settings: {},</code></pre>
 
 <div class="description">
     <p>Defines the linear scale.</p>
+<p>On linear scale values scale with 1 unit. See 'useLinearScale'.</p>
 </div>
 
 
@@ -484,7 +486,7 @@ settings: {},</code></pre>
         <p class="tag-source">
             <a href="linear-scale_src_linear-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="linear-scale_src_linear-scale.ts.html">linear-scale/src/linear-scale.ts</a>, <a href="linear-scale_src_linear-scale.ts.html#line9">line 9</a>
+                <a href="linear-scale_src_linear-scale.ts.html">linear-scale/src/linear-scale.ts</a>, <a href="linear-scale_src_linear-scale.ts.html#line12">line 12</a>
             </span>
         </p>
     
@@ -524,6 +526,7 @@ settings: {},</code></pre>
 
 <div class="description">
     <p>Defines the modular scale.</p>
+<p>On modular scale values scale based on the settings. See 'useModularScale'.</p>
 </div>
 
 
@@ -558,6 +561,13 @@ settings: {},</code></pre>
     
 
     
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/modularscale/modularscale-js">https://github.com/modularscale/modularscale-js</a></li>
+        </ul>
+    </dd>
+    
 
     
 
@@ -565,7 +575,7 @@ settings: {},</code></pre>
         <p class="tag-source">
             <a href="modular-scale_src_modular-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="modular-scale_src_modular-scale.ts.html">modular-scale/src/modular-scale.ts</a>, <a href="modular-scale_src_modular-scale.ts.html#line9">line 9</a>
+                <a href="modular-scale_src_modular-scale.ts.html">modular-scale/src/modular-scale.ts</a>, <a href="modular-scale_src_modular-scale.ts.html#line13">line 13</a>
             </span>
         </p>
     
@@ -601,6 +611,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
 
 <div class="description">
     <p>Defines the modular scale.</p>
+<p>On modular scale values scale based on the settings. See 'useModularScale'.</p>
 </div>
 
 
@@ -635,6 +646,13 @@ settings: {base:[1], ratio: 1.33}</code></pre>
     
 
     
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/modularscale/modularscale-js">https://github.com/modularscale/modularscale-js</a></li>
+        </ul>
+    </dd>
+    
 
     
 
@@ -642,7 +660,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
         <p class="tag-source">
             <a href="modular-scale_lib_modular-scale.js.html" class="button">View Source</a>
             <span>
-                <a href="modular-scale_lib_modular-scale.js.html">modular-scale/lib/modular-scale.js</a>, <a href="modular-scale_lib_modular-scale.js.html#line8">line 8</a>
+                <a href="modular-scale_lib_modular-scale.js.html">modular-scale/lib/modular-scale.js</a>, <a href="modular-scale_lib_modular-scale.js.html#line12">line 12</a>
             </span>
         </p>
     
@@ -678,6 +696,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
 
 <div class="description">
     <p>Defines the typographic grid.</p>
+<p>The typographic grid is defined by the font size and line height. It is set on the <code>&lt;body&gt;</code> tag and it can be set to be responsive..</p>
 </div>
 
 
@@ -728,7 +747,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
         <p class="tag-source">
             <a href="typographic-grid_lib_typographic-grid.js.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_lib_typographic-grid.js.html">typographic-grid/lib/typographic-grid.js</a>, <a href="typographic-grid_lib_typographic-grid.js.html#line16">line 16</a>
+                <a href="typographic-grid_lib_typographic-grid.js.html">typographic-grid/lib/typographic-grid.js</a>, <a href="typographic-grid_lib_typographic-grid.js.html#line18">line 18</a>
             </span>
         </p>
     
@@ -777,6 +796,7 @@ lineHeight: 1.25,</code></pre>
 
 <div class="description">
     <p>Defines the typographic grid.</p>
+<p>The typographic grid is defined by the font size and line height. It is set on the <code>&lt;body&gt;</code> tag and it can be set to be responsive..</p>
 </div>
 
 
@@ -827,7 +847,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typographic-grid_src_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_src_typographic-grid.ts.html">typographic-grid/src/typographic-grid.ts</a>, <a href="typographic-grid_src_typographic-grid.ts.html#line17">line 17</a>
+                <a href="typographic-grid_src_typographic-grid.ts.html">typographic-grid/src/typographic-grid.ts</a>, <a href="typographic-grid_src_typographic-grid.ts.html#line19">line 19</a>
             </span>
         </p>
     
@@ -872,7 +892,8 @@ lineHeight: 1.25,</code></pre>
 
 <div class="description">
     <p>Defines the typographic scale.</p>
-<p>The scale comes from one of the presets: linear scale, modular scale.</p>
+<p>The scale defines how typographic elements vary in size compared to the body text.
+The scale comes from one of the presets: linear scale, modular scale.</p>
 </div>
 
 
@@ -914,7 +935,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typographic-scale_lib_typographic-scale.js.html" class="button">View Source</a>
             <span>
-                <a href="typographic-scale_lib_typographic-scale.js.html">typographic-scale/lib/typographic-scale.js</a>, <a href="typographic-scale_lib_typographic-scale.js.html#line13">line 13</a>
+                <a href="typographic-scale_lib_typographic-scale.js.html">typographic-scale/lib/typographic-scale.js</a>, <a href="typographic-scale_lib_typographic-scale.js.html#line15">line 15</a>
             </span>
         </p>
     
@@ -959,7 +980,8 @@ settings: {base:[1], ratio: 1.33}</code></pre>
 
 <div class="description">
     <p>Defines the typographic scale.</p>
-<p>The scale comes from one of the presets: linear scale, modular scale.</p>
+<p>The scale defines how typographic elements vary in size compared to the body text.
+The scale comes from one of the presets: linear scale, modular scale.</p>
 </div>
 
 
@@ -1001,7 +1023,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
         <p class="tag-source">
             <a href="typographic-scale_src_typographic-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-scale_src_typographic-scale.ts.html">typographic-scale/src/typographic-scale.ts</a>, <a href="typographic-scale_src_typographic-scale.ts.html#line14">line 14</a>
+                <a href="typographic-scale_src_typographic-scale.ts.html">typographic-scale/src/typographic-scale.ts</a>, <a href="typographic-scale_src_typographic-scale.ts.html#line16">line 16</a>
             </span>
         </p>
     
@@ -1489,7 +1511,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
         <p class="tag-source">
             <a href="linear-scale_src_linear-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="linear-scale_src_linear-scale.ts.html">linear-scale/src/linear-scale.ts</a>, <a href="linear-scale_src_linear-scale.ts.html#line15">line 15</a>
+                <a href="linear-scale_src_linear-scale.ts.html">linear-scale/src/linear-scale.ts</a>, <a href="linear-scale_src_linear-scale.ts.html#line18">line 18</a>
             </span>
         </p>
     
@@ -1689,7 +1711,7 @@ settings: {base:[1], ratio: 1.33}</code></pre>
         <p class="tag-source">
             <a href="modular-scale_src_modular-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="modular-scale_src_modular-scale.ts.html">modular-scale/src/modular-scale.ts</a>, <a href="modular-scale_src_modular-scale.ts.html#line18">line 18</a>
+                <a href="modular-scale_src_modular-scale.ts.html">modular-scale/src/modular-scale.ts</a>, <a href="modular-scale_src_modular-scale.ts.html#line22">line 22</a>
             </span>
         </p>
     
@@ -2216,7 +2238,7 @@ It's not necesary to define font sizes for all the breakpoints. Larger screens i
         <p class="tag-source">
             <a href="typographic-grid_src_typographic-grid.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-grid_src_typographic-grid.ts.html">typographic-grid/src/typographic-grid.ts</a>, <a href="typographic-grid_src_typographic-grid.ts.html#line23">line 23</a>
+                <a href="typographic-grid_src_typographic-grid.ts.html">typographic-grid/src/typographic-grid.ts</a>, <a href="typographic-grid_src_typographic-grid.ts.html#line25">line 25</a>
             </span>
         </p>
     
@@ -2569,7 +2591,7 @@ lineHeight: 1.25,</code></pre>
         <p class="tag-source">
             <a href="typographic-scale_src_typographic-scale.ts.html" class="button">View Source</a>
             <span>
-                <a href="typographic-scale_src_typographic-scale.ts.html">typographic-scale/src/typographic-scale.ts</a>, <a href="typographic-scale_src_typographic-scale.ts.html#line23">line 23</a>
+                <a href="typographic-scale_src_typographic-scale.ts.html">typographic-scale/src/typographic-scale.ts</a>, <a href="typographic-scale_src_typographic-scale.ts.html#line25">line 25</a>
             </span>
         </p>
     

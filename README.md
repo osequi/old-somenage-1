@@ -19,6 +19,9 @@ A design system for Os Equi in React.
 #### README.md for every package
 
 - Run the global task: `"readme": "lerna exec --parallel -- yarn readme",`
+- This will generate the README from the compiled `.js`. Make sure first the `.ts` files ar ecompile dto `.js` the generate the README.
+- If want to generate from `.ts` change the local task to : `"readme": "jsdoc2md --configure ../../jsdoc2md.json src/breakpoints.ts > README.md"`
+- For now generating from `js` makes a better result than generating from `.ts`
 
 #### Global API docs in HTML
 

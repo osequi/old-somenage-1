@@ -22,7 +22,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "readme": "jsdoc2md --configure ../../jsdoc2md.json src/breakpoints.ts > README.md"
+    "readme": "jsdoc2md lib/breakpoints.js > README.md"
   },
   "bugs": {
     "url": "https://github.com/osequi/somenage/issues"

@@ -110,12 +110,21 @@
 <h3>TS to JS</h3>
 <ul>
 <li>Run the global task: <code>&quot;tsc&quot;: &quot;lerna exec --parallel -- tsc --watch&quot;</code></li>
-<li>Which needs the local <code>tsconfig.json</code> files for the relative <code>outDir</code> (./lib)</li>
+<li>Which needs the local <code>tsconfig.json</code> files for the relative <code>outDir</code> (<code>./lib</code>)</li>
 <li>The global <code>tsconfig.json</code> must exclude all <code>.test.ts</code> files, otherwise the tests will be compiled too.</li>
 </ul>
-<h2>Test</h2>
+<h3>Test</h3>
 <ul>
 <li>Run the global task: <code>&quot;test&quot;: &quot;yarn jest --watchAll&quot;,</code></li>
+</ul>
+<h3>Docs</h3>
+<h4>README.md for every package</h4>
+<ul>
+<li>Run the global task: <code>&quot;readme&quot;: &quot;lerna exec --parallel -- yarn readme&quot;,</code></li>
+</ul>
+<h4>Global API docs in HTML</h4>
+<ul>
+<li>Run the global task: <code>&quot;docs&quot;: &quot;jsdoc -c jsdoc.json&quot;,</code></li>
 </ul></article>
     </section>
 
