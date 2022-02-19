@@ -1,5 +1,19 @@
 # somenage
 
+## TLDR;
+
+- No React, just some tokens in `theme`
+- The first TS attempt
+- Docs with Better Docs
+- Lerna monorepo
+- Introduces the linear and modular scale
+
+## Takeaways
+
+- Nothing really
+
+## OLD README
+
 A design system for Os Equi in React.
 
 ## DX
